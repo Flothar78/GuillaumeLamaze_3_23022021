@@ -1,4 +1,22 @@
 body {
-  background-color: #FF79DA;
+  background-color: #99e2d0;
+}
+
+figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fa-handshake {
+  rotate: 45;
+}
+
+div {
+  border: #9356dc 2px solid;
+}
+
+figure {
+  border: #ff79da 2px solid;
 }
 /*# sourceMappingURL=style.css.map */

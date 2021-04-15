@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="sass/style.css">
-  <script src="script.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <script src="script.js"></script>
+  </head>
 
-<body>
-   <header>
-      <div class="logo"><img src="chemin/logo.png"></div><!--div pour logo-->
-      <div class="localisation"><form action=""></form>  </div><!--formulaire avec lieu recherche map marker-->
-      <div class="reservez"><p>texte Réservez...</p>                               <!--texte et bouton-->
-                            <p>texte Découvrez...</p>                                <!--texte et bouton-->
-      <div><input type="button" value="Explorer nos restaurants"></div> </div>       <!--texte et bouton-->
+  <body>
+    <header>
+      <div class="logo"><img src="images-logos/ohmyfood.png" alt="logo" /></div>
+      <!--div pour logo-->
+      <div class="localisation">
+        <form method="POST" action="traitement.php">
+          <i class="fas fa-map-marker-alt"></i
+          ><input type="text" name="lieu" placeholder="Paris, Belleville" />
+        </form>
+      </div>
+      <!--formulaire avec lieu recherche map marker-->
+      <div class="reservez">
+        <p>Réservez le menu qui vous convient</p>
+        <!--texte et bouton-->
+        <p>Découvrez des restaurants d'exception,</p>
+        <p>sélectionnés par nos soins.</p>
 
-   </header>
+        <div><a href="#nosrestaurants">Explorer nos restaurants</a></div>
+      </div><form type=""
+      <!--texte et bouton-->
+    </header>
 
-<main>
-  <section class="fonctionnement">
-    <div class=choixrestaurant></div>
-    <div class="composemenu"></div>
-    <div class="degusterestau"></div>
-  </section>
-  <section class="restaurants">
-      <div class="lapalette"></div>
-<div class="lanote"></div>
-<div class="alafrancaise"></div>
-<div class="ledelice"></div>
-  </section>
-</main>
-
-
-</body>
-
+    <main>
+      <section class="fonctionnement">
+        <h1>Fonctionnement</h1>
+        <ol>
+          <li class="choixrestaurant">
+            <i class="fas fa-mobile-alt"></i>Choisissez un restaurant
+          </li>
+          <li class="composemenu">
+            <i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>Composez
+            votre menu
+          </li>
+          <li class="degusterestau">
+            <i class="fas fa-mobile-alt">Dégustez au restaurant</i>
+          </li>
+        </ol>
+      </section>
+      <section class="restaurants" id="nosrestaurants">
+        <h1>Restaurants</h1>
+        <div class="lapalette">
+          <figure>
+            <img
+              src="images-logos/la_palette_du_gout-mini.jpg"
+              alt="le délice des sens"
+            />
+            <figcaption>
+              <div><p>La palette du goût</p>
+              <p>Ménilmontant</p></div>
+              <div><i class="far fa-heart"></i></div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="lanote">
+          <figure>
+            <img
+              src="images-logos/la_note_enchantee-mini.jpg"
+              alt="la note enchantée"
+            />
+            <figcaption>
+              <div><p>La note enchantée</p>
+              <p>Charonne</p></div>
+              <div><i class="far fa-heart"></i></div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="alafrancaise">
+          <figure>
+            <img
+              src="images-logos/a_la_francaise-mini.jpg"
+              alt="A la française"
+            />
+            <figcaption>
+              <div><p>A la française</p>
+              <p>Cité Rouge</p></div>
+              <div><i class="far fa-heart"></i></div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="ledelice">
+          <figure>
+            <img
+              src="images-logos/le_delice_des_sens-mini.jpg"
+              alt="Le délice des sens"
+            />
+            <figcaption>
+              <div><p>Le délice des sens</p>
+              <p>Folie-Méricourt</p></div>
+              <div><i class="far fa-heart"></i></div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logofooter"><img src="images-logos/ohmyfood@2x.svg" /></div>
+      <div class="proposer"><i class="fas fa-utensils"></i>Proposer un restaurant</div>
+      <div class="devenir"><i class="fas fa-handshake"></i>Devenir partenaire</div>
+      <div>Mentions légales</div>
+      <div class="contact">
+        <a href="mailto:adressemail@fictive.com">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>

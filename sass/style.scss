@@ -1,8 +1,26 @@
-$colorprimary: #9356DC;
-$colorsecondary: #FF79DA;
-$colortertiary: #99E2D0;
+$colorprimary: #9356dc;
+$colorsecondary: #ff79da;
+$colortertiary: #99e2d0;
 
-body
+body {
+  background-color: $colortertiary;
+}
+
+
+
+figcaption {
+  display: flex;
+}
+
+.fa-handshake
 {
-    background-color: $colorsecondary;
+    rotate: 45;
+}
+
+div {
+  border: $colorprimary 2px solid;
+}
+
+figure {
+  border: $colorsecondary 2px solid;
 }
