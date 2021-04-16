@@ -8,12 +8,46 @@ figcaption h1 {
   font-family: "Shrikhand", cursive;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .maincartes {
+  background-color: #eeeaea;
+}
+
+.localisation {
+  background-color: #afa6a6;
+}
+
+.logoindex {
+  padding-left: 30%;
+}
+
+.retourlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.retourlogo .logo {
+  margin-left: 23%;
+}
+
+.retourlogo .retouraccueil {
+  font-size: 3rem;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
   background-color: #eeeaea;
 }
 
@@ -24,24 +58,47 @@ figure img {
      object-fit: cover;
 }
 
-.localisation {
-  background-color: #afa6a6;
-}
-
-.retourlogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo {
-  margin: auto;
-}
-
 figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+figcaption .text {
+  width: 80%;
+  font-size: 3rem;
+  line-height: 0.8rem;
+}
+
+figcaption .textcartes {
+  width: 80%;
+  font-size: 2rem;
+  line-height: rem;
+  padding-left: 3%;
+}
+
+figcaption .ico {
+  width: 20%;
+  font-size: 3rem;
+}
+
+figcaption .ico .fa-heart {
+  float: right;
+  margin: 40%;
+}
+
+figcaption .icocartes {
+  width: 20%;
+  font-size: 3rem;
+}
+
+figcaption .icocartes .fa-heart {
+  margin-top: 35%;
+  margin-left: 35%;
+}
+
+.entrees h1 {
+  margin: 0;
 }
 
 .reservez,
@@ -75,17 +132,5 @@ footer {
 
 footer img {
   color: white;
-}
-
-div {
-  border: #9356dc 2px solid;
-}
-
-figure {
-  border: #ff79da 2px solid;
-}
-
-li {
-  border: green 1px solid;
 }
 /*# sourceMappingURL=style.css.map */

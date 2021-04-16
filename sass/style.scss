@@ -16,6 +16,10 @@ figcaption h1 {
   font-family: "Shrikhand", cursive;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -25,35 +29,75 @@ a {
   background-color: $colorfourth;
 }
 
-
 @mixin stretchpics {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-
- figure img {
-  @include stretchpics
- }
-
-
 .localisation {
   background-color: $colorsixth;
 }
 
-.retourlogo {
-  display: flex;
+.logoindex {
+  padding-left: 30%;
 }
 
-.logo  {
-   margin: auto;
+.retourlogo {
+  display: flex;
+  .logo {
+    margin-left: 23%;
+  }
+  .retouraccueil {
+    font-size: 3rem;
+    padding-left: 3%;
+    padding-top: 1%;
+  }
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  background-color: #eeeaea;
+  img {
+    @include stretchpics;
+  }
 }
 
 figcaption {
-  display: flex; 
+  display: flex;
+  .text {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 0.8rem;
+  }
+  .textcartes {
+    width: 80%;
+    font-size: 2rem;
+    line-height: rem;
+    padding-left: 3%;
+  }
+  .ico {
+    width: 20%;
+    font-size: 3rem;
+    .fa-heart {
+      float: right;
+      margin: 40%;
+    }
+  }
+  .icocartes {
+    width: 20%;
+    font-size: 3rem;
+    .fa-heart {
+      margin-top: 35%;
+      margin-left: 35%;
+    }
+  }
 }
 
+.entrees h1 {
+  margin: 0;
+}
 
 .reservez,
 .choixrestaurant,
@@ -74,30 +118,10 @@ figcaption {
   justify-content: space-between;
 }
 
-
-
 footer {
   color: white;
   background-color: $colorfifth;
   img {
     color: white;
   }
-}
-
-
-
-
-
-
-div {
-  border: $colorprimary 2px solid;
-}
-
-figure {
-  border: $colorsecondary 2px solid;
-}
-
-li
-{
-  border: green 1px solid;
 }
