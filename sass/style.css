@@ -1,15 +1,62 @@
-p {
-  font-family: 'Roboto', sans-serif;
+p,
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
 figcaption h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.maincartes {
+  background-color: #eeeaea;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.localisation {
+  background-color: #afa6a6;
+}
+
+.retourlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  margin: auto;
 }
 
 figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.reservez,
+.choixrestaurant,
+.composemenu,
+.degusterestau {
+  background-color: #eeeaea;
+}
+
+.restaurants {
+  background-color: #eeeaea;
+}
+
+.restaurants figcaption {
+  background-color: white;
 }
 
 .detailsarticles {
@@ -21,6 +68,15 @@ figcaption {
           justify-content: space-between;
 }
 
+footer {
+  color: white;
+  background-color: #312f2f;
+}
+
+footer img {
+  color: white;
+}
+
 div {
   border: #9356dc 2px solid;
 }
@@ -29,7 +85,7 @@ figure {
   border: #ff79da 2px solid;
 }
 
-h1, h2 {
-  font-family: Roboto;
+li {
+  border: green 1px solid;
 }
 /*# sourceMappingURL=style.css.map */
