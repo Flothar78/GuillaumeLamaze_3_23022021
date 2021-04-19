@@ -1,10 +1,13 @@
 p,
 h1,
-h2 {
+h2,
+.reservez,
+footer {
   font-family: "Roboto", sans-serif;
 }
 
-figcaption h1 {
+figcaption h1,
+.logo-footer {
   font-family: "Shrikhand", cursive;
 }
 
@@ -17,29 +20,92 @@ a {
   color: inherit;
 }
 
-.maincartes {
-  background-color: #eeeaea;
+.main-cartes {
+  background-color: #f6f6f6;
 }
 
 .localisation {
-  background-color: #afa6a6;
+  background-color: #eaeaea;
+  height: 7.5rem;
+  border-top: solid 3px #cfcfcf;
+  -webkit-box-shadow: 0px -6px -6px;
+          box-shadow: 0px -6px -6px;
 }
 
-.logoindex {
-  padding-left: 30%;
+.localisation form {
+  font-size: 2.5rem;
 }
 
-.retourlogo {
+.localisation form .fa-map-marker-alt {
+  padding-right: 5%;
+  padding-left: 26%;
+}
+
+.localisation form input {
+  height: 100%;
+  background-color: #eaeaea;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 3.5%;
+}
+
+.reservez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.4rem;
+}
+
+.reservez .reservez-un {
+  padding-top: 3%;
+}
+
+.reservez .reservez-deux {
+  font-size: 2rem;
+}
+
+.reservez .explorer {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  white-space: nowrap;
+  background-color: #9356dc;
+  color: white;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+
+.logo-index {
+  padding-left: 27%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.retour-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.retourlogo .logo {
+.retour-logo .logo {
   margin-left: 23%;
 }
 
-.retourlogo .retouraccueil {
+.retour-logo .retour-accueil {
   font-size: 3rem;
   padding-left: 3%;
   padding-top: 1%;
@@ -70,10 +136,10 @@ figcaption .text {
   line-height: 0.8rem;
 }
 
-figcaption .textcartes {
+figcaption .text-cartes {
   width: 80%;
   font-size: 2rem;
-  line-height: rem;
+  line-height: 3rem;
   padding-left: 3%;
 }
 
@@ -87,36 +153,40 @@ figcaption .ico .fa-heart {
   margin: 40%;
 }
 
-figcaption .icocartes {
+figcaption .ico-cartes {
   width: 20%;
   font-size: 3rem;
 }
 
-figcaption .icocartes .fa-heart {
+figcaption .ico-cartes .fa-heart {
   margin-top: 35%;
   margin-left: 35%;
 }
 
-.entrees h1 {
+.entrees h2 {
   margin: 0;
 }
 
 .reservez,
-.choixrestaurant,
-.composemenu,
-.degusterestau {
-  background-color: #eeeaea;
+.choix-restaurant,
+.compose-menu,
+.deguste-restau {
+  background-color: #f6f6f6;
+}
+
+.reservez p {
+  margin-top: 0;
 }
 
 .restaurants {
-  background-color: #eeeaea;
+  background-color: #f6f6f6;
 }
 
 .restaurants figcaption {
   background-color: white;
 }
 
-.detailsarticles {
+.details-articles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,10 +197,28 @@ figcaption .icocartes .fa-heart {
 
 footer {
   color: white;
-  background-color: #312f2f;
+  background-color: #353535;
+  padding-left: 6%;
+  line-height: 3.3rem;
 }
 
-footer img {
-  color: white;
+.fa-utensils {
+  padding-right: 5%;
+}
+
+.fa-handshake {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  padding-right: 4.4%;
+  font-size: 0.8rem;
+}
+
+.logo-footer {
+  padding-bottom: 4%;
+  padding-top: 5%;
+}
+
+.contact {
+  padding-bottom: 8%;
 }
 /*# sourceMappingURL=style.css.map */

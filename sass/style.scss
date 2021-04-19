@@ -1,18 +1,27 @@
-$colorprimary: #9356dc;
-$colorsecondary: #ff79da;
-$colortertiary: #99e2d0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 
-$colorfourth: rgb(238, 234, 234);
-$colorfifth: rgb(49, 47, 47);
-$colorsixth: rgb(175, 166, 166);
+$color-fourth: #f6f6f6;
+$color-fifth: #353535;
+$color-sixth: #eaeaea;
+
+@mixin stretch-pics {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 p,
 h1,
-h2 {
+h2,
+.reservez,
+footer {
   font-family: "Roboto", sans-serif;
 }
 
-figcaption h1 {
+figcaption h1,
+.logo-footer {
   font-family: "Shrikhand", cursive;
 }
 
@@ -25,30 +34,73 @@ a {
   color: inherit;
 }
 
-.maincartes {
-  background-color: $colorfourth;
-}
-
-@mixin stretchpics {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.main-cartes {
+  background-color: $color-fourth;
 }
 
 .localisation {
-  background-color: $colorsixth;
+  background-color: $color-sixth;
+  height: 7.5rem;
+  border-top: solid 3px #cfcfcf;
+  box-shadow: 0px -6px -6px;
+  form {
+    font-size: 2.5rem;
+    .fa-map-marker-alt {
+      padding-right: 5%;
+      padding-left: 26%;
+    }
+    input {
+      height: 100%;
+      background-color: #eaeaea;
+      border: none;
+      font-size: 2.5rem;
+      font-weight: bold;
+      padding-top: 3.5%;
+    }
+  }
 }
 
-.logoindex {
-  padding-left: 30%;
+.reservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.4rem;
+  .reservez-un {
+    padding-top: 3%;
+  }
+  .reservez-deux {
+    font-size: 2rem;
+  }
+  .explorer {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+    background-color: $color-primary;
+    color: white;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+  }
 }
 
-.retourlogo {
+.logo-index {
+  padding-left: 27%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.retour-logo {
   display: flex;
   .logo {
     margin-left: 23%;
   }
-  .retouraccueil {
+  .retour-accueil {
     font-size: 3rem;
     padding-left: 3%;
     padding-top: 1%;
@@ -60,7 +112,7 @@ figure {
   margin: 0;
   background-color: #eeeaea;
   img {
-    @include stretchpics;
+    @include stretch-pics;
   }
 }
 
@@ -71,10 +123,10 @@ figcaption {
     font-size: 3rem;
     line-height: 0.8rem;
   }
-  .textcartes {
+  .text-cartes {
     width: 80%;
     font-size: 2rem;
-    line-height: rem;
+    line-height: 3rem;
     padding-left: 3%;
   }
   .ico {
@@ -85,7 +137,7 @@ figcaption {
       margin: 40%;
     }
   }
-  .icocartes {
+  .ico-cartes {
     width: 20%;
     font-size: 3rem;
     .fa-heart {
@@ -95,33 +147,55 @@ figcaption {
   }
 }
 
-.entrees h1 {
+.entrees h2 {
   margin: 0;
 }
 
 .reservez,
-.choixrestaurant,
-.composemenu,
-.degusterestau {
-  background-color: $colorfourth;
+.choix-restaurant,
+.compose-menu,
+.deguste-restau {
+  background-color: $color-fourth;
+}
+
+.reservez p {
+  margin-top: 0;
 }
 
 .restaurants {
-  background-color: $colorfourth;
+  background-color: $color-fourth;
   figcaption {
     background-color: white;
   }
 }
 
-.detailsarticles {
+.details-articles {
   display: flex;
   justify-content: space-between;
 }
 
 footer {
   color: white;
-  background-color: $colorfifth;
-  img {
-    color: white;
-  }
+  background-color: $color-fifth;
+  padding-left: 6%;
+  line-height: 3.3rem;
+}
+
+.fa-utensils {
+  padding-right: 5%;
+}
+
+.fa-handshake {
+  transform: rotate(-45deg);
+  padding-right: 4.4%;
+  font-size: 0.8rem;
+}
+
+.logo-footer {
+  padding-bottom: 4%;
+  padding-top: 5%;
+}
+
+.contact {
+  padding-bottom: 8%;
 }
