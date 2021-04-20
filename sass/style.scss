@@ -16,6 +16,7 @@ p,
 h1,
 h2,
 .reservez,
+.fonctionnement,
 footer {
   font-family: "Roboto", sans-serif;
 }
@@ -34,6 +35,12 @@ a {
   color: inherit;
 }
 
+.logo-index {
+  padding-left: 30%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
 .main-cartes {
   background-color: $color-fourth;
 }
@@ -41,13 +48,13 @@ a {
 .localisation {
   background-color: $color-sixth;
   height: 7.5rem;
-  border-top: solid 3px #cfcfcf;
-  box-shadow: 0px -6px -6px;
+  border-top: solid 6px #cfcfcf;
+  
   form {
     font-size: 2.5rem;
     .fa-map-marker-alt {
-      padding-right: 5%;
-      padding-left: 26%;
+      padding-right: 4%;
+      padding-left: 30%;
     }
     input {
       height: 100%;
@@ -64,15 +71,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.4rem;
+  padding-bottom: 4%;
+
   .reservez-un {
     padding-top: 3%;
+    font-size: 1.7rem;
+    white-space: nowrap;
   }
   .reservez-deux {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    white-space: nowrap;
   }
   .explorer {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
     padding-top: 2rem;
@@ -89,10 +100,53 @@ a {
   }
 }
 
-.logo-index {
-  padding-left: 27%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+.fonctionnement {
+  font-size: 2rem;
+  h1 {
+    margin-left: 16%;
+    margin-top: 8%;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 3%;
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    box-shadow: 10px 10px 15px $color-sixth;
+
+    .fa-mobile-alt {
+      padding-right: 9.5%;
+    }
+
+    .fa-list {
+      padding-right: 8%;
+    }
+
+    .fa-store {
+      color: $color-primary;
+      padding-right: 7%;
+    }
+
+    span {
+      background-color: $color-primary;
+      font-size: 1.6rem;
+      padding-top: 4px;
+      margin-right: 8%;
+      margin-left: -3%;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
 }
 
 .retour-logo {
@@ -177,18 +231,19 @@ figcaption {
 footer {
   color: white;
   background-color: $color-fifth;
+  font-size: 2.5rem;
   padding-left: 6%;
-  line-height: 3.3rem;
+  line-height: 4rem;
 }
 
 .fa-utensils {
-  padding-right: 5%;
+  padding-right: 3.5%;
 }
 
 .fa-handshake {
   transform: rotate(-45deg);
-  padding-right: 4.4%;
-  font-size: 0.8rem;
+  margin-right: 2.7%;
+  font-size: 2rem;
 }
 
 .logo-footer {

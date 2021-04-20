@@ -2,6 +2,7 @@ p,
 h1,
 h2,
 .reservez,
+.fonctionnement,
 footer {
   font-family: "Roboto", sans-serif;
 }
@@ -20,6 +21,12 @@ a {
   color: inherit;
 }
 
+.logo-index {
+  padding-left: 30%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
 .main-cartes {
   background-color: #f6f6f6;
 }
@@ -27,9 +34,7 @@ a {
 .localisation {
   background-color: #eaeaea;
   height: 7.5rem;
-  border-top: solid 3px #cfcfcf;
-  -webkit-box-shadow: 0px -6px -6px;
-          box-shadow: 0px -6px -6px;
+  border-top: solid 6px #cfcfcf;
 }
 
 .localisation form {
@@ -37,8 +42,8 @@ a {
 }
 
 .localisation form .fa-map-marker-alt {
-  padding-right: 5%;
-  padding-left: 26%;
+  padding-right: 4%;
+  padding-left: 30%;
 }
 
 .localisation form input {
@@ -61,19 +66,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.4rem;
+  padding-bottom: 4%;
 }
 
 .reservez .reservez-un {
   padding-top: 3%;
+  font-size: 1.7rem;
+  white-space: nowrap;
 }
 
 .reservez .reservez-deux {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  white-space: nowrap;
 }
 
 .reservez .explorer {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding-top: 2rem;
@@ -89,10 +97,60 @@ a {
   border-bottom-left-radius: 4rem;
 }
 
-.logo-index {
-  padding-left: 27%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+.fonctionnement {
+  font-size: 2rem;
+}
+
+.fonctionnement h1 {
+  margin-left: 16%;
+  margin-top: 8%;
+}
+
+.fonctionnement li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-top: 3%;
+  height: 150px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  -webkit-box-shadow: 10px 10px 15px #eaeaea;
+          box-shadow: 10px 10px 15px #eaeaea;
+}
+
+.fonctionnement li .fa-mobile-alt {
+  padding-right: 9.5%;
+}
+
+.fonctionnement li .fa-list {
+  padding-right: 8%;
+}
+
+.fonctionnement li .fa-store {
+  color: #9356dc;
+  padding-right: 7%;
+}
+
+.fonctionnement li span {
+  background-color: #9356dc;
+  font-size: 1.6rem;
+  padding-top: 4px;
+  margin-right: 8%;
+  margin-left: -3%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .retour-logo {
@@ -198,19 +256,20 @@ figcaption .ico-cartes .fa-heart {
 footer {
   color: white;
   background-color: #353535;
+  font-size: 2.5rem;
   padding-left: 6%;
-  line-height: 3.3rem;
+  line-height: 4rem;
 }
 
 .fa-utensils {
-  padding-right: 5%;
+  padding-right: 3.5%;
 }
 
 .fa-handshake {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  padding-right: 4.4%;
-  font-size: 0.8rem;
+  margin-right: 2.7%;
+  font-size: 2rem;
 }
 
 .logo-footer {
