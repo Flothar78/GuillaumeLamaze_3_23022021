@@ -1,6 +1,8 @@
 p,
 h1,
 h2,
+h3,
+h4,
 .reservez,
 .fonctionnement,
 footer {
@@ -66,17 +68,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 4%;
+  padding-bottom: 6%;
 }
 
 .reservez .reservez-un {
-  padding-top: 3%;
-  font-size: 1.7rem;
+  padding-top: 5%;
+  font-size: 1.8rem;
   white-space: nowrap;
 }
 
 .reservez .reservez-deux {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   white-space: nowrap;
 }
 
@@ -104,6 +106,7 @@ a {
 .fonctionnement h1 {
   margin-left: 16%;
   margin-top: 8%;
+  font-size: 3.5rem;
 }
 
 .fonctionnement li {
@@ -114,6 +117,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
+  font-size: 2.3rem;
   margin-top: 3%;
   height: 150px;
   width: 70%;
@@ -150,7 +154,15 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .retour-logo {
@@ -169,54 +181,116 @@ a {
   padding-top: 1%;
 }
 
-figure {
-  width: 100%;
-  margin: 0;
-  background-color: #eeeaea;
+.restaurants {
+  padding-top: 10%;
+  margin-top: 15%;
+  padding-bottom: 10%;
 }
 
-figure img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+.restaurants h1 {
+  padding-left: 6%;
+  padding-bottom: 3%;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-figcaption {
+.restaurants figure {
+  width: 88%;
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+.restaurants figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 0 0 50px 50px;
+  -webkit-box-shadow: 10px 10px 15px #eaeaea;
+          box-shadow: 10px 10px 15px #eaeaea;
 }
 
-figcaption .text {
+.restaurants figure figcaption .text {
   width: 80%;
   font-size: 3rem;
   line-height: 0.8rem;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  letter-spacing: -4px;
 }
 
-figcaption .text-cartes {
+.restaurants figure figcaption .ico {
+  width: 20%;
+  font-size: 4.5rem;
+}
+
+.restaurants figure figcaption .ico .fa-heart {
+  float: right;
+  margin: 40%;
+}
+
+.la-palette img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8% 8% 0 0;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
+}
+
+.la-note img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8% 8% 0 0;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+
+.a-la-francaise img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8% 8% 0 0;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+}
+
+.le-delice img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8% 8% 0 0;
+  -o-object-position: 50% 95%;
+     object-position: 50% 95%;
+}
+
+.figure-cartes {
+  width: 88%;
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+.figure-cartes .img {
+  border-radius: 0 0 0 0;
+}
+
+.figure-cartes .figcaption .text-cartes {
   width: 80%;
   font-size: 2rem;
   line-height: 3rem;
   padding-left: 3%;
 }
 
-figcaption .ico {
+.figure-cartes .figcaption .ico-cartes {
   width: 20%;
   font-size: 3rem;
 }
 
-figcaption .ico .fa-heart {
-  float: right;
-  margin: 40%;
-}
-
-figcaption .ico-cartes {
-  width: 20%;
-  font-size: 3rem;
-}
-
-figcaption .ico-cartes .fa-heart {
+.figure-cartes .figcaption .ico-cartes .fa-heart {
   margin-top: 35%;
   margin-left: 35%;
 }
@@ -258,7 +332,8 @@ footer {
   background-color: #353535;
   font-size: 2.5rem;
   padding-left: 6%;
-  line-height: 4rem;
+  padding-bottom: 2%;
+  line-height: 6rem;
 }
 
 .fa-utensils {
