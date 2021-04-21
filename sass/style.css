@@ -58,16 +58,9 @@ a {
 }
 
 .reservez {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 6%;
 }
 
@@ -110,12 +103,8 @@ a {
 }
 
 .fonctionnement li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style-type: none;
   font-size: 2.3rem;
   margin-top: 3%;
@@ -127,8 +116,7 @@ a {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  -webkit-box-shadow: 10px 10px 15px #eaeaea;
-          box-shadow: 10px 10px 15px #eaeaea;
+  box-shadow: 10px 10px 15px #eaeaea;
 }
 
 .fonctionnement li .fa-mobile-alt {
@@ -154,20 +142,12 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .retour-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -201,12 +181,9 @@ a {
 }
 
 .restaurants figure figcaption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 0 0 50px 50px;
-  -webkit-box-shadow: 10px 10px 15px #eaeaea;
-          box-shadow: 10px 10px 15px #eaeaea;
+  box-shadow: 10px 10px 15px #eaeaea;
 }
 
 .restaurants figure figcaption .text {
@@ -231,72 +208,104 @@ a {
 .la-palette img {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8% 8% 0 0;
-  -o-object-position: 50% 100%;
-     object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 
 .la-note img {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8% 8% 0 0;
-  -o-object-position: 50% 60%;
-     object-position: 50% 60%;
+  object-position: 50% 60%;
 }
 
 .a-la-francaise img {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8% 8% 0 0;
-  -o-object-position: 0 100%;
-     object-position: 0 100%;
+  object-position: 0 100%;
 }
 
 .le-delice img {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8% 8% 0 0;
-  -o-object-position: 50% 95%;
-     object-position: 50% 95%;
+  object-position: 50% 95%;
 }
 
 .figure-cartes {
-  width: 88%;
-  margin: auto;
-  margin-bottom: 6%;
+  background-color: #f6f6f6;
+  margin: 0;
+  margin-top: 2%;
 }
 
-.figure-cartes .img {
-  border-radius: 0 0 0 0;
+.figure-cartes img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: 10% 0%;
 }
 
-.figure-cartes .figcaption .text-cartes {
+.figure-cartes figcaption {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 20% 20%;
+}
+
+.figure-cartes figcaption .text-cartes {
   width: 80%;
-  font-size: 2rem;
+  font-size: 2.3rem;
   line-height: 3rem;
-  padding-left: 3%;
+  padding-left: 4%;
 }
 
-.figure-cartes .figcaption .ico-cartes {
+.figure-cartes figcaption .ico-cartes {
   width: 20%;
   font-size: 3rem;
 }
 
-.figure-cartes .figcaption .ico-cartes .fa-heart {
-  margin-top: 35%;
+.figure-cartes figcaption .ico-cartes .fa-heart {
+  margin-top: 25%;
   margin-left: 35%;
 }
 
-.entrees h2 {
+.entrees > h2,
+.plats > h2,
+.desserts > h2 {
+  margin-left: 4%;
+  margin-top: 0;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.itemmenu {
+  border: solid transparent 3px;
+  background-color: white;
+  margin: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  border-radius: 25px;
+  box-shadow: 5px 8px 15px #eaeaea;
+}
+
+.itemmenu h2 {
   margin: 0;
+}
+
+.itemmenu p {
+  margin-top: 1%;
+}
+
+.details-articles {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 .reservez,
@@ -318,13 +327,25 @@ a {
   background-color: white;
 }
 
-.details-articles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.commander {
+  padding-top: 6%;
+  padding-bottom: 12%;
+}
+
+.commander input {
+  width: 40%;
+  margin-left: 30%;
+  height: 6rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border: transparent;
+  background-color: #9356dc;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  box-shadow: 5px 5px 20px #353535;
 }
 
 footer {
@@ -336,23 +357,22 @@ footer {
   line-height: 6rem;
 }
 
-.fa-utensils {
-  padding-right: 6%;
-}
-
-.fa-handshake {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  margin-right: 5%;
-  font-size: 2rem;
-}
-
-.logo-footer {
+footer .logo-footer {
   padding-bottom: 4%;
   padding-top: 5%;
 }
 
-.contact {
+footer .proposer .fa-utensils {
+  padding-right: 6%;
+}
+
+footer .devenir .fa-handshake {
+  transform: rotate(-45deg);
+  margin-right: 6%;
+  font-size: 1.6rem;
+}
+
+footer .contact {
   padding-bottom: 8%;
 }
 /*# sourceMappingURL=style.css.map */

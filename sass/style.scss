@@ -51,7 +51,6 @@ a {
   background-color: $color-sixth;
   height: 7.5rem;
   border-top: solid 6px #cfcfcf;
-
   form {
     font-size: 2.5rem;
     .fa-map-marker-alt {
@@ -74,7 +73,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding-bottom: 6%;
-
   .reservez-un {
     padding-top: 5%;
     font-size: 1.8rem;
@@ -124,20 +122,16 @@ a {
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
     box-shadow: 10px 10px 15px $color-sixth;
-
     .fa-mobile-alt {
       padding-right: 9.5%;
     }
-
     .fa-list {
       padding-right: 8%;
     }
-
     .fa-store {
       color: $color-primary;
       padding-right: 7%;
     }
-
     span {
       background-color: $color-primary;
       font-size: 1.6rem;
@@ -230,32 +224,67 @@ a {
 }
 
 .figure-cartes {
-  width: 88%;
-  margin: auto;
-  margin-bottom: 6%;
-  .img {
-    border-radius: 0 0 0 0;
+  background-color: $color-fourth;
+  margin: 0;
+  margin-top: 2%;
+  img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: 10% 0%;
   }
-  .figcaption {
+  figcaption {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 20% 20%;
     .text-cartes {
       width: 80%;
-      font-size: 2rem;
+      font-size: 2.3rem;
       line-height: 3rem;
-      padding-left: 3%;
+      padding-left: 4%;
     }
     .ico-cartes {
       width: 20%;
       font-size: 3rem;
       .fa-heart {
-        margin-top: 35%;
+        margin-top: 25%;
         margin-left: 35%;
       }
     }
   }
 }
 
-.entrees h2 {
-  margin: 0;
+.entrees > h2,
+.plats > h2,
+.desserts > h2 {
+  margin-left: 4%;
+  margin-top: 0;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.itemmenu {
+  border: solid transparent 3px;
+  background-color: white;
+  margin: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  border-radius: 25px;
+  box-shadow: 5px 8px 15px $color-sixth;
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin-top: 1%;
+  }
+}
+
+.details-articles {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 .reservez,
@@ -276,9 +305,24 @@ a {
   }
 }
 
-.details-articles {
-  display: flex;
-  justify-content: space-between;
+.commander {
+  padding-top: 6%;
+  padding-bottom: 12%;
+  input {
+    width: 40%;
+    margin-left: 30%;
+    height: 6rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: transparent;
+    background-color: $color-primary;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    box-shadow: 5px 5px 20px $color-fifth;
+  }
 }
 
 footer {
@@ -288,23 +332,23 @@ footer {
   padding-left: 6%;
   padding-bottom: 2%;
   line-height: 6rem;
-}
-
-.fa-utensils {
-  padding-right: 6%;
-}
-
-.fa-handshake {
-  transform: rotate(-45deg);
-  margin-right: 5%;
-  font-size: 2rem;
-}
-
-.logo-footer {
-  padding-bottom: 4%;
-  padding-top: 5%;
-}
-
-.contact {
-  padding-bottom: 8%;
+  .logo-footer {
+    padding-bottom: 4%;
+    padding-top: 5%;
+  }
+  .proposer {
+    .fa-utensils {
+      padding-right: 6%;
+    }
+  }
+  .devenir {
+    .fa-handshake {
+      transform: rotate(-45deg);
+      margin-right: 6%;
+      font-size: 1.6rem;
+    }
+  }
+  .contact {
+    padding-bottom: 8%;
+  }
 }
