@@ -6,6 +6,8 @@ $color-fourth: #f6f6f6;
 $color-fifth: #353535;
 $color-sixth: #eaeaea;
 
+$color-green: #99e2d0;
+
 @mixin stretch-pics {
   width: 100%;
   height: 450px;
@@ -23,7 +25,7 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 
-figcaption h1,
+.text-cartes h1,
 .logo-footer {
   font-family: "Shrikhand", cursive;
 }
@@ -162,7 +164,8 @@ a {
 }
 
 .restaurants {
-  padding-top: 10%;
+  background-color: $color-fourth;
+  padding-top: 6%;
   margin-top: 15%;
   padding-bottom: 10%;
   h1 {
@@ -172,10 +175,28 @@ a {
     font-weight: bold;
   }
   figure {
+    position: relative;
     width: 88%;
     margin: auto;
     margin-bottom: 6%;
+    .nouveau-vert {
+      position: absolute;
+      top: 8%;
+      right: 5%;
+      height: 10%;
+      width: 23.75%;
+      background-color: $color-green;
+      color: #208f73;
+      font-size: 2.2rem;
+      font-weight: bold;
+      border-radius: 6%;
+      p {
+        margin: 6%;
+        padding-left: 10%;
+      }
+    }
     figcaption {
+      background-color: white;
       display: flex;
       border-radius: 0 0 50px 50px;
       box-shadow: 10px 10px 15px $color-sixth;
@@ -227,17 +248,20 @@ a {
   background-color: $color-fourth;
   margin: 0;
   margin-top: 2%;
+
   img {
     width: 100%;
     height: 550px;
     object-fit: cover;
     object-position: 10% 0%;
   }
-  figcaption {
+  div {
+    border: 3px solid yellow;
     display: flex;
     padding-top: 3%;
     padding-bottom: 3%;
-    border-radius: 20% 20%;
+    border-radius: 20% 20% 0 0;
+
     .text-cartes {
       width: 80%;
       font-size: 2.3rem;
@@ -261,7 +285,12 @@ a {
   margin-left: 4%;
   margin-top: 0;
   padding-top: 4%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
+}
+
+.souligne-vert {
+  padding-bottom: 1.5%;
+  border-bottom: $color-green 6px solid;
 }
 
 .itemmenu {
@@ -284,7 +313,7 @@ a {
 .details-articles {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .reservez,
@@ -298,22 +327,15 @@ a {
   margin-top: 0;
 }
 
-.restaurants {
-  background-color: $color-fourth;
-  figcaption {
-    background-color: white;
-  }
-}
-
 .commander {
   padding-top: 6%;
-  padding-bottom: 12%;
+  padding-bottom: 14%;
   input {
     width: 40%;
     margin-left: 30%;
     height: 6rem;
     color: white;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     border: transparent;
     background-color: $color-primary;
