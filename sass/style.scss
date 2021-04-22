@@ -39,14 +39,14 @@ a {
   color: inherit;
 }
 
-.logo-index {
-  padding-left: 30%;
+header {
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
 }
 
-.main-cartes {
-  background-color: $color-fourth;
+.logo-index {
+  padding-left: 30%;
+
+  padding-bottom: 2.5%;
 }
 
 .localisation {
@@ -244,23 +244,26 @@ a {
   object-position: 50% 95%;
 }
 
-.figure-cartes {
+.titre-cartes {
   background-color: $color-fourth;
   margin: 0;
   margin-top: 2%;
+  position: relative;
 
   img {
     width: 100%;
-    height: 550px;
+    height: 600px;
     object-fit: cover;
-    object-position: 10% 0%;
   }
-  div {
-    border: 3px solid yellow;
+  > div {
+    background-color: $color-fourth;
+    width: 100%;
+    margin-top: -100px;
+    position: absolute;
     display: flex;
     padding-top: 3%;
     padding-bottom: 3%;
-    border-radius: 20% 20% 0 0;
+    border-radius: 10%/50%;
 
     .text-cartes {
       width: 80%;
@@ -277,6 +280,12 @@ a {
       }
     }
   }
+}
+
+.main-cartes {
+  background-color: $color-fourth;
+  margin-top: -10%;
+  padding-top: 20%;
 }
 
 .entrees > h2,

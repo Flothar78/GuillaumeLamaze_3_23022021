@@ -23,14 +23,13 @@ a {
   color: inherit;
 }
 
-.logo-index {
-  padding-left: 30%;
+header {
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
 }
 
-.main-cartes {
-  background-color: #f6f6f6;
+.logo-index {
+  padding-left: 30%;
+  padding-bottom: 2.5%;
 }
 
 .localisation {
@@ -258,42 +257,51 @@ a {
   object-position: 50% 95%;
 }
 
-.figure-cartes {
+.titre-cartes {
   background-color: #f6f6f6;
   margin: 0;
   margin-top: 2%;
+  position: relative;
 }
 
-.figure-cartes img {
+.titre-cartes img {
   width: 100%;
-  height: 550px;
+  height: 600px;
   object-fit: cover;
-  object-position: 10% 0%;
 }
 
-.figure-cartes div {
-  border: 3px solid yellow;
+.titre-cartes > div {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-top: -100px;
+  position: absolute;
   display: flex;
   padding-top: 3%;
   padding-bottom: 3%;
-  border-radius: 20% 20% 0 0;
+  border-radius: 10%/50%;
 }
 
-.figure-cartes div .text-cartes {
+.titre-cartes > div .text-cartes {
   width: 80%;
   font-size: 2.3rem;
   line-height: 3rem;
   padding-left: 4%;
 }
 
-.figure-cartes div .ico-cartes {
+.titre-cartes > div .ico-cartes {
   width: 20%;
   font-size: 3rem;
 }
 
-.figure-cartes div .ico-cartes .fa-heart {
+.titre-cartes > div .ico-cartes .fa-heart {
   margin-top: 25%;
   margin-left: 35%;
+}
+
+.main-cartes {
+  background-color: #f6f6f6;
+  margin-top: -10%;
+  padding-top: 20%;
 }
 
 .entrees > h2,
