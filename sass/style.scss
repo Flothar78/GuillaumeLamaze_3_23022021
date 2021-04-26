@@ -39,37 +39,44 @@ a {
   color: inherit;
 }
 
-.fond-loader {
-  background-color: #56dc93;
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  .loader {
-    font-family: "Shrikhand", cursive;
-    font-size: 5rem;
-    text-align: center;
-    height: 500px;
-    line-height: 500px;
-    color: $color-primary;
-    background-color: $color-tertiary;
-    animation-name: example;
-    animation-duration: 3000ms;
-    animation-timing-function: cubic-bezier(1, 0.7, 1, 0.82);
-    .text-loader {
-      text-shadow: 1rem 1rem 0.5rem #c5b2dd;
-    }
+.loader {
+  font-family: "Shrikhand", cursive;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: $color-primary;
+  background-color: $color-tertiary;
+  visibility: hidden;
+  animation-name: entree-site;
+  animation-duration: 3000ms;
+  animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+  .text-loader {
+    text-shadow: 1rem 1rem 0.5rem #c5b2dd;
+  }
+}
 
-    @keyframes example {
-      0% {
-        color: $color-tertiary;
-      }
-      50% {
-        color: $color-secondary;
-      }
-      100% {
-        color: $color-primary;
-      }
-    }
+@keyframes entree-site {
+  0% {
+    color: $color-tertiary;
+    visibility: visible;
+  }
+  50% {
+    color: $color-secondary;
+  }
+  99% {
+    color: $color-primary;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 
@@ -79,7 +86,6 @@ header {
 
 .logo-index {
   padding-left: 30%;
-
   padding-bottom: 2.5%;
 }
 

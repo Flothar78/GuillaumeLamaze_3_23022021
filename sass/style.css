@@ -23,39 +23,45 @@ a {
   color: inherit;
 }
 
-.fond-loader {
-  background-color: #56dc93;
-  width: 100%;
-  height: 500px;
-  position: absolute;
-}
-
-.fond-loader .loader {
+.loader {
   font-family: "Shrikhand", cursive;
-  font-size: 5rem;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 500px;
-  line-height: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   color: #9356dc;
   background-color: #99e2d0;
-  animation-name: example;
+  visibility: hidden;
+  animation-name: entree-site;
   animation-duration: 3000ms;
-  animation-timing-function: cubic-bezier(1, 0.7, 1, 0.82);
+  animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
 }
 
-.fond-loader .loader .text-loader {
+.loader .text-loader {
   text-shadow: 1rem 1rem 0.5rem #c5b2dd;
 }
 
-@keyframes example {
+@keyframes entree-site {
   0% {
     color: #99e2d0;
+    visibility: visible;
   }
   50% {
     color: #ff79da;
   }
-  100% {
+  99% {
     color: #9356dc;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 
