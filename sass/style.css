@@ -26,9 +26,15 @@ a {
 .loader {
   font-family: "Shrikhand", cursive;
   font-size: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   position: fixed;
   z-index: 1;
@@ -39,13 +45,33 @@ a {
   color: #9356dc;
   background-color: #99e2d0;
   visibility: hidden;
-  animation-name: entree-site;
-  animation-duration: 3000ms;
-  animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+  -webkit-animation-name: entree-site;
+          animation-name: entree-site;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+          animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
 }
 
 .loader .text-loader {
   text-shadow: 1rem 1rem 0.5rem #c5b2dd;
+}
+
+@-webkit-keyframes entree-site {
+  0% {
+    color: #99e2d0;
+    visibility: visible;
+  }
+  50% {
+    color: #ff79da;
+  }
+  99% {
+    color: #9356dc;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 @keyframes entree-site {
@@ -99,9 +125,16 @@ header {
 }
 
 .reservez {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 6%;
 }
 
@@ -132,14 +165,19 @@ header {
   border-bottom-left-radius: 4rem;
   background: linear-gradient(-45deg, #9356dc, #ff79da);
   opacity: 1;
-  box-shadow: 5px 5px 20px #353535;
+  -webkit-box-shadow: 5px 5px 20px #353535;
+          box-shadow: 5px 5px 20px #353535;
+  -webkit-transition: opacity 200ms, -webkit-box-shadow 200ms;
+  transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: box-shadow 200ms, opacity 200ms;
+  transition: box-shadow 200ms, opacity 200ms, -webkit-box-shadow 200ms;
 }
 
 .reservez .explorer:hover {
   background: linear-gradient(-45deg, #9356dc, #ff79da);
   opacity: 0.8;
-  box-shadow: 10px 10px 20px #353535;
+  -webkit-box-shadow: 10px 10px 20px #353535;
+          box-shadow: 10px 10px 20px #353535;
 }
 
 .fonctionnement {
@@ -153,8 +191,12 @@ header {
 }
 
 .fonctionnement li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   font-size: 2.3rem;
   margin-top: 3%;
@@ -166,7 +208,19 @@ header {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  box-shadow: 10px 10px 15px #eaeaea;
+  opacity: 1;
+  -webkit-box-shadow: 10px 10px 15px #eaeaea;
+          box-shadow: 10px 10px 15px #eaeaea;
+  -webkit-transition: opacity 300ms, -webkit-box-shadow 300ms;
+  transition: opacity 300ms, -webkit-box-shadow 300ms;
+  transition: opacity 300ms, box-shadow 300ms;
+  transition: opacity 300ms, box-shadow 300ms, -webkit-box-shadow 300ms;
+}
+
+.fonctionnement li:hover {
+  opacity: 0.6;
+  -webkit-box-shadow: 12px 12px 15px #d6cbcb;
+          box-shadow: 12px 12px 15px #d6cbcb;
 }
 
 .fonctionnement li .fa-mobile-alt {
@@ -192,12 +246,20 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .retour-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -252,9 +314,12 @@ header {
 
 .restaurants figure figcaption {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 0 0 50px 50px;
-  box-shadow: 10px 10px 15px #eaeaea;
+  -webkit-box-shadow: 10px 10px 15px #eaeaea;
+          box-shadow: 10px 10px 15px #eaeaea;
 }
 
 .restaurants figure figcaption .text {
@@ -279,33 +344,41 @@ header {
 .la-palette img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8% 8% 0 0;
-  object-position: 50% 100%;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
 }
 
 .la-note img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8% 8% 0 0;
-  object-position: 50% 60%;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
 }
 
 .a-la-francaise img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8% 8% 0 0;
-  object-position: 0 100%;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
 }
 
 .le-delice img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8% 8% 0 0;
-  object-position: 50% 95%;
+  -o-object-position: 50% 95%;
+     object-position: 50% 95%;
 }
 
 .titre-cartes {
@@ -318,7 +391,8 @@ header {
 .titre-cartes img {
   width: 100%;
   height: 600px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .titre-cartes > div {
@@ -326,6 +400,8 @@ header {
   width: 100%;
   margin-top: -100px;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -371,11 +447,15 @@ header {
 
 .item-encoche {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .item-encoche .itemmenu {
-  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
   background-color: white;
   border: solid blue 3px;
   margin: 3%;
@@ -384,12 +464,19 @@ header {
   padding-right: 3%;
   padding-top: 3%;
   border-radius: 25px;
-  box-shadow: 5px 8px 15px #eaeaea;
+  -webkit-box-shadow: 5px 8px 15px #eaeaea;
+          box-shadow: 5px 8px 15px #eaeaea;
 }
 
 .item-encoche .itemmenu .details-articles {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 2.3rem;
 }
 
@@ -399,19 +486,31 @@ header {
 
 .item-encoche .itemmenu p {
   margin-top: 1%;
+  text-overflow: ellipsis;
+  color: red;
+  position: relative;
+  z-index: 100;
 }
 
 .item-encoche .itemmenu:hover + .encoche {
-  transform: translate(-100%, 0);
+  -webkit-transform: translate(-300%, 0);
+          transform: translate(-300%, 0);
+  z-index: 10;
 }
 
 .item-encoche .encoche {
   background: green;
+  position: absolute;
+  right: 0;
+  z-index: 0;
   margin: auto;
   margin-left: 0;
-  height: 100px;
+  height: 145px;
   width: 100px;
+  -webkit-transition: -webkit-transform 3000ms ease-in-out;
+  transition: -webkit-transform 3000ms ease-in-out;
   transition: transform 3000ms ease-in-out;
+  transition: transform 3000ms ease-in-out, -webkit-transform 3000ms ease-in-out;
 }
 
 .reservez,
@@ -442,16 +541,21 @@ header {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  box-shadow: 5px 5px 20px #353535;
+  -webkit-box-shadow: 5px 5px 20px #353535;
+          box-shadow: 5px 5px 20px #353535;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
   opacity: 1;
   box-shadow: 5px 5px 20px #353535;
+  -webkit-transition: opacity 200ms, -webkit-box-shadow 200ms;
+  transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: box-shadow 200ms, opacity 200ms;
+  transition: box-shadow 200ms, opacity 200ms, -webkit-box-shadow 200ms;
 }
 
 .commander input:hover {
   opacity: 0.8;
-  box-shadow: 10px 10px 20px #353535;
+  -webkit-box-shadow: 10px 10px 20px #353535;
+          box-shadow: 10px 10px 20px #353535;
 }
 
 footer {
@@ -473,7 +577,8 @@ footer .proposer .fa-utensils {
 }
 
 footer .devenir .fa-handshake {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   margin-right: 6%;
   font-size: 1.6rem;
 }
