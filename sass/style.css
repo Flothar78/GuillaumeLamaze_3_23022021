@@ -454,63 +454,144 @@ header {
 
 .item-encoche .itemmenu {
   width: 100%;
-  position: relative;
-  z-index: 1;
-  background-color: white;
-  border: solid blue 3px;
-  margin: 3%;
-  margin-right: 0;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 3%;
-  border-radius: 25px;
-  -webkit-box-shadow: 5px 8px 15px #eaeaea;
-          box-shadow: 5px 8px 15px #eaeaea;
-}
-
-.item-encoche .itemmenu .details-articles {
-  position: relative;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2.3rem;
+  position: relative;
+  background-color: white;
+  border: solid blue 3px;
+  margin: 3%;
+  margin-right: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 8px 15px #eaeaea;
+          box-shadow: 5px 8px 15px #eaeaea;
 }
 
-.item-encoche .itemmenu h2 {
+.item-encoche .itemmenu .details-articles {
+  border: red solid 4px;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+}
+
+.item-encoche .itemmenu .details-articles h2 {
   margin: 0;
+}
+
+.item-encoche .itemmenu .details-articles p {
+  margin-top: 1%;
+  position: relative;
 }
 
 .item-encoche .itemmenu p {
   margin-top: 1%;
-  text-overflow: ellipsis;
-  color: red;
-  position: relative;
-  z-index: 100;
 }
 
-.item-encoche .itemmenu:hover + .encoche {
-  -webkit-transform: translate(-300%, 0);
-          transform: translate(-300%, 0);
-  z-index: 10;
+.item-encoche .itemmenu:hover > .details-prix {
+  -webkit-transform: translate(-200%, 0);
+          transform: translate(-200%, 0);
 }
 
-.item-encoche .encoche {
-  background: green;
-  position: absolute;
-  right: 0;
-  z-index: 0;
-  margin: auto;
-  margin-left: 0;
-  height: 145px;
-  width: 100px;
+.item-encoche .itemmenu .details-prix {
+  padding-top: 12%;
+  font-size: 3rem;
   -webkit-transition: -webkit-transform 3000ms ease-in-out;
   transition: -webkit-transform 3000ms ease-in-out;
   transition: transform 3000ms ease-in-out;
   transition: transform 3000ms ease-in-out, -webkit-transform 3000ms ease-in-out;
+}
+
+.item-encoche .itemmenu:hover + .encoche {
+  -webkit-animation-name: box-grow;
+          animation-name: box-grow;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.item-encoche .itemmenu:hover + .encoche span {
+  -webkit-animation-name: rotation-encoche;
+          animation-name: rotation-encoche;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.item-encoche .encoche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: green;
+  right: 0;
+  margin: auto;
+  margin-left: 0;
+  height: 220px;
+  width: 0px;
+}
+
+.item-encoche .encoche span {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  color: green;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes box-grow {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes box-grow {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@-webkit-keyframes rotation-encoche {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-encoche {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .reservez,
