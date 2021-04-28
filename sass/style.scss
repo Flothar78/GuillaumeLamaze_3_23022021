@@ -365,7 +365,6 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
-
     background-color: white;
     border: solid blue 3px;
     margin: 3%;
@@ -374,17 +373,30 @@ header {
     padding-right: 3%;
     border-radius: 25px;
     box-shadow: 5px 8px 15px $color-sixth;
-
+    &:hover > .details-articles {
+      background: yellow;
+      transform: scaleX(0.8);
+      transform-origin: left;
+    }
     .details-articles {
       border: red solid 4px;
-      text-overflow: ellipsis;
-      font-size: 1.5rem;
+      width: 65%;
+      transition: transform 3000ms ease-in-out;
+
+      transform-origin: left;
       h2 {
         margin: 0;
+        min-width: 470px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 2rem;
       }
       p {
-        margin-top: 1%;
-        position: relative;
+        margin-top: 10%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
     p {
@@ -392,10 +404,11 @@ header {
     }
 
     &:hover > .details-prix {
-      transform: translate(-200%, 0);
+      transform: translate(-500%, 0);
     }
     .details-prix {
       padding-top: 12%;
+      z-index: 10;
       font-size: 3rem;
       transition: transform 3000ms ease-in-out;
     }
@@ -405,23 +418,28 @@ header {
       animation-duration: 3000ms;
       animation-fill-mode: forwards;
     }
+
     &:hover + .encoche span {
       animation-name: rotation-encoche;
       animation-duration: 3000ms;
       animation-fill-mode: forwards;
-      animation-direction: alternate;
     }
   }
   .encoche {
+    position: absolute;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: green;
+    background: $color-tertiary;
     right: 0;
     margin: auto;
     margin-left: 0;
     height: 220px;
     width: 0px;
+    animation-name: box-grow-reverse;
+    animation-duration: 3000ms;
+
     span {
       background-color: white;
       width: 50px;
@@ -429,7 +447,7 @@ header {
       border-radius: 50%;
       line-height: 50px;
       text-align: center;
-      color: green;
+      color: $color-tertiary;
       font-size: 2rem;
     }
   }
@@ -443,6 +461,16 @@ header {
     width: 200px;
   }
 }
+
+@keyframes box-grow-reverse {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
 @keyframes rotation-encoche {
   0% {
     transform: rotate(90deg);

@@ -472,19 +472,39 @@ header {
           box-shadow: 5px 8px 15px #eaeaea;
 }
 
+.item-encoche .itemmenu:hover > .details-articles {
+  background: yellow;
+  -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 .item-encoche .itemmenu .details-articles {
   border: red solid 4px;
-  text-overflow: ellipsis;
-  font-size: 1.5rem;
+  width: 65%;
+  -webkit-transition: -webkit-transform 3000ms ease-in-out;
+  transition: -webkit-transform 3000ms ease-in-out;
+  transition: transform 3000ms ease-in-out;
+  transition: transform 3000ms ease-in-out, -webkit-transform 3000ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .item-encoche .itemmenu .details-articles h2 {
   margin: 0;
+  min-width: 470px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 2rem;
 }
 
 .item-encoche .itemmenu .details-articles p {
-  margin-top: 1%;
-  position: relative;
+  margin-top: 10%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .item-encoche .itemmenu p {
@@ -492,12 +512,13 @@ header {
 }
 
 .item-encoche .itemmenu:hover > .details-prix {
-  -webkit-transform: translate(-200%, 0);
-          transform: translate(-200%, 0);
+  -webkit-transform: translate(-500%, 0);
+          transform: translate(-500%, 0);
 }
 
 .item-encoche .itemmenu .details-prix {
   padding-top: 12%;
+  z-index: 10;
   font-size: 3rem;
   -webkit-transition: -webkit-transform 3000ms ease-in-out;
   transition: -webkit-transform 3000ms ease-in-out;
@@ -521,11 +542,11 @@ header {
           animation-duration: 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 .item-encoche .encoche {
+  position: absolute;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,12 +556,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: green;
+  background: #99e2d0;
   right: 0;
   margin: auto;
   margin-left: 0;
   height: 220px;
   width: 0px;
+  -webkit-animation-name: box-grow-reverse;
+          animation-name: box-grow-reverse;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
 }
 
 .item-encoche .encoche span {
@@ -550,7 +575,7 @@ header {
   border-radius: 50%;
   line-height: 50px;
   text-align: center;
-  color: green;
+  color: #99e2d0;
   font-size: 2rem;
 }
 
@@ -569,6 +594,24 @@ header {
   }
   100% {
     width: 200px;
+  }
+}
+
+@-webkit-keyframes box-grow-reverse {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes box-grow-reverse {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
   }
 }
 
