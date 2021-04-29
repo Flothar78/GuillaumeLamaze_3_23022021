@@ -359,7 +359,10 @@ header {
 .item-encoche {
   width: 100%;
   display: flex;
-
+  animation-name: glissement-articles;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
   .itemmenu {
     width: 100%;
     display: flex;
@@ -372,18 +375,18 @@ header {
     padding-right: 3%;
     border-radius: 25px;
     box-shadow: 5px 8px 15px $color-sixth;
+
     &:hover > .details-articles {
-      background: yellow;
       animation-name: reduction-articles;
-      animation-duration: 3000ms;
+      animation-duration: 300ms;
       animation-fill-mode: forwards;
     }
 
     .details-articles {
-      border: red solid 4px;
       position: relative;
-      font-size: 1rem;
+      font-size: 1.7rem;
       padding-left: 3%;
+      padding-top: 3%;
       width: 70%;
 
       h2 {
@@ -408,19 +411,19 @@ header {
       transform: translate(-150px, 0);
     }
     .details-prix {
-      border: blue solid 2px;
       position: relative;
-      padding-top: 5%;
-      transition: transform 3000ms ease-in-out;
+      padding-top: 10%;
+      font-size: 2rem;
+      transition: transform 300ms 100ms ease-in-out;
     }
     &:hover > .encoche {
       animation-name: box-grow;
-      animation-duration: 3000ms;
+      animation-duration: 300ms;
       animation-fill-mode: forwards;
     }
     &:hover > .encoche span {
       animation-name: rotation-encoche;
-      animation-duration: 3000ms;
+      animation-duration: 300ms;
       animation-fill-mode: forwards;
     }
   }
@@ -432,12 +435,11 @@ header {
     right: 0;
     margin: auto;
     margin-left: 0;
-    height: 74px;
-    width: 0px;
+    height: 196px;
+
+    visibility: hidden;
     border-radius: 0 25px 25px 0;
     background-color: $color-tertiary;
-    animation-name: box-grow-reverse;
-    animation-duration: 3000ms;
 
     span {
       background-color: white;
@@ -451,23 +453,79 @@ header {
     }
   }
 }
+
+@keyframes glissement-articles {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, 100px);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    transform: (0, 0);
+    opacity: 1;
+  }
+}
+
+.entrees .item-encoche:nth-child(1) {
+  animation-delay: 0ms;
+}
+.entrees .item-encoche:nth-child(2) {
+  animation-delay: 200ms;
+}
+.entrees .item-encoche:nth-child(3) {
+  animation-delay: 400ms;
+}
+.entrees .item-encoche:nth-child(4) {
+  animation-delay: 600ms;
+}
+.entrees .item-encoche:nth-child(5) {
+  animation-delay: 800ms;
+}
+
+.plats .item-encoche:nth-child(1) {
+  animation-delay: 0ms;
+}
+.plats .item-encoche:nth-child(2) {
+  animation-delay: 200ms;
+}
+.plats .item-encoche:nth-child(3) {
+  animation-delay: 400ms;
+}
+.plats .item-encoche:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.desserts .item-encoche:nth-child(1) {
+  animation-delay: 0ms;
+}
+.desserts .item-encoche:nth-child(2) {
+  animation-delay: 200ms;
+}
+.desserts .item-encoche:nth-child(3) {
+  animation-delay: 400ms;
+}
+.desserts .item-encoche:nth-child(4) {
+  animation-delay: 600ms;
+}
+
 @keyframes box-grow {
   0% {
     width: 0px;
     visibility: visible;
   }
-  100% {
-    width: 60px;
-    visibility: visible;
-  }
-}
 
-@keyframes box-grow-reverse {
-  0% {
-    width: 100px;
+  1% {
+    width: 1px;
   }
+
   100% {
-    width: 0px;
+    width: 100px;
+    visibility: visible;
   }
 }
 
@@ -487,13 +545,13 @@ header {
     width: 70%;
   }
   50% {
-    width: 70%;
+    width: 60%;
   }
   80% {
-    width: 55%;
+    width: 45%;
   }
   100% {
-    width: 55%;
+    width: 45%;
   }
 }
 
