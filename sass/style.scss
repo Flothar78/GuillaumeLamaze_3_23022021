@@ -32,6 +32,7 @@ footer {
 
 body {
   margin: 0;
+  overflow: visible;
 }
 
 a {
@@ -328,7 +329,17 @@ header {
     .ico-cartes {
       width: 20%;
       font-size: 3rem;
-      .fa-heart {
+      .fas {
+        color: red;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .far {
+        top: 0;
+        bottom: 100%;
         margin-top: 25%;
         margin-left: 35%;
       }
@@ -360,7 +371,7 @@ header {
   width: 100%;
   display: flex;
   animation-name: glissement-articles;
-  animation-duration: 1000ms;
+  animation-duration: 1500ms;
   animation-fill-mode: forwards;
   opacity: 0;
   .itemmenu {
@@ -391,13 +402,14 @@ header {
 
       h2 {
         margin: 0;
+        margin-bottom: 3%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
       }
       p {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 3%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -436,7 +448,6 @@ header {
     margin: auto;
     margin-left: 0;
     height: 196px;
-
     visibility: hidden;
     border-radius: 0 25px 25px 0;
     background-color: $color-tertiary;
@@ -472,45 +483,51 @@ header {
 }
 
 .entrees .item-encoche:nth-child(1) {
-  animation-delay: 0ms;
-}
-.entrees .item-encoche:nth-child(2) {
   animation-delay: 200ms;
 }
-.entrees .item-encoche:nth-child(3) {
+.entrees .item-encoche:nth-child(2) {
   animation-delay: 400ms;
 }
-.entrees .item-encoche:nth-child(4) {
+.entrees .item-encoche:nth-child(3) {
   animation-delay: 600ms;
 }
-.entrees .item-encoche:nth-child(5) {
+.entrees .item-encoche:nth-child(4) {
   animation-delay: 800ms;
+}
+.entrees .item-encoche:nth-child(5) {
+  animation-delay: 1000ms;
 }
 
 .plats .item-encoche:nth-child(1) {
-  animation-delay: 0ms;
-}
-.plats .item-encoche:nth-child(2) {
   animation-delay: 200ms;
 }
-.plats .item-encoche:nth-child(3) {
+.plats .item-encoche:nth-child(2) {
   animation-delay: 400ms;
 }
-.plats .item-encoche:nth-child(4) {
+.plats .item-encoche:nth-child(3) {
   animation-delay: 600ms;
+}
+.plats .item-encoche:nth-child(4) {
+  animation-delay: 800ms;
+}
+.plats .item-encoche:nth-child(5) {
+  animation-delay: 1000ms;
 }
 
 .desserts .item-encoche:nth-child(1) {
-  animation-delay: 0ms;
-}
-.desserts .item-encoche:nth-child(2) {
   animation-delay: 200ms;
 }
-.desserts .item-encoche:nth-child(3) {
+.desserts .item-encoche:nth-child(2) {
   animation-delay: 400ms;
 }
-.desserts .item-encoche:nth-child(4) {
+.desserts .item-encoche:nth-child(3) {
   animation-delay: 600ms;
+}
+.desserts .item-encoche:nth-child(4) {
+  animation-delay: 800ms;
+}
+.desserts .item-encoche:nth-child(4) {
+  animation-delay: 1000ms;
 }
 
 @keyframes box-grow {

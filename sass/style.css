@@ -16,6 +16,7 @@ footer {
 
 body {
   margin: 0;
+  overflow: visible;
 }
 
 a {
@@ -420,7 +421,18 @@ header {
   font-size: 3rem;
 }
 
-.titre-cartes > div .ico-cartes .fa-heart {
+.titre-cartes > div .ico-cartes .fas {
+  color: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.titre-cartes > div .ico-cartes .far {
+  top: 0;
+  bottom: 100%;
   margin-top: 25%;
   margin-left: 35%;
 }
@@ -452,8 +464,8 @@ header {
   display: flex;
   -webkit-animation-name: glissement-articles;
           animation-name: glissement-articles;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -497,6 +509,7 @@ header {
 
 .item-encoche .itemmenu .details-articles h2 {
   margin: 0;
+  margin-bottom: 3%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -504,7 +517,7 @@ header {
 
 .item-encoche .itemmenu .details-articles p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 3%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -617,68 +630,78 @@ header {
 }
 
 .entrees .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
-}
-
-.entrees .item-encoche:nth-child(2) {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
-.entrees .item-encoche:nth-child(3) {
+.entrees .item-encoche:nth-child(2) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
-.entrees .item-encoche:nth-child(4) {
+.entrees .item-encoche:nth-child(3) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.entrees .item-encoche:nth-child(5) {
+.entrees .item-encoche:nth-child(4) {
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
+.entrees .item-encoche:nth-child(5) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
 .plats .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 .plats .item-encoche:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 .plats .item-encoche:nth-child(3) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.plats .item-encoche:nth-child(4) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.desserts .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+.plats .item-encoche:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 
-.desserts .item-encoche:nth-child(2) {
+.plats .item-encoche:nth-child(5) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.desserts .item-encoche:nth-child(1) {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
-.desserts .item-encoche:nth-child(3) {
+.desserts .item-encoche:nth-child(2) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
-.desserts .item-encoche:nth-child(4) {
+.desserts .item-encoche:nth-child(3) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
+}
+
+.desserts .item-encoche:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.desserts .item-encoche:nth-child(4) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 @-webkit-keyframes box-grow {
