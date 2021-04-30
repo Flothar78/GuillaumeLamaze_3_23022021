@@ -16,7 +16,7 @@ footer {
 
 body {
   margin: 0;
-  overflow: visible;
+  overflow-y: auto;
 }
 
 a {
@@ -417,24 +417,53 @@ header {
 }
 
 .titre-cartes > div .ico-cartes {
-  width: 20%;
   font-size: 3rem;
+  border: greenyellow solid 2px;
 }
 
 .titre-cartes > div .ico-cartes .fas {
   color: red;
-  position: absolute;
-  top: 0;
+  text-align: center;
+  z-index: 1;
+  position: relative;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
-.titre-cartes > div .ico-cartes .far {
-  top: 0;
+.titre-cartes > div .ico-cartes .fas .far {
+  position: absolute;
+  z-index: 10;
+  color: black;
   bottom: 100%;
-  margin-top: 25%;
+  margin-top: 5%;
   margin-left: 35%;
+  opacity: 1;
+}
+
+.titre-cartes > div .ico-cartes .fas .far:hover {
+  -webkit-animation-name: coeur-opacity;
+          animation-name: coeur-opacity;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes coeur-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes coeur-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .main-cartes {
@@ -450,6 +479,7 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
+  font-size: 3rem;
 }
 
 .souligne-vert {
@@ -481,11 +511,11 @@ header {
           justify-content: space-between;
   position: relative;
   background-color: white;
-  margin: 3%;
-  margin-right: 0;
+  margin: 2%;
+  margin-right: 3%;
   padding-left: 3%;
   padding-right: 3%;
-  border-radius: 25px;
+  border-radius: 50px;
   -webkit-box-shadow: 5px 8px 15px #eaeaea;
           box-shadow: 5px 8px 15px #eaeaea;
 }
@@ -501,8 +531,6 @@ header {
 
 .item-encoche .itemmenu .details-articles {
   position: relative;
-  font-size: 1.7rem;
-  padding-left: 3%;
   padding-top: 3%;
   width: 70%;
 }
@@ -510,6 +538,8 @@ header {
 .item-encoche .itemmenu .details-articles h2 {
   margin: 0;
   margin-bottom: 3%;
+  font-size: 3em;
+  font-weight: bolder;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -518,6 +548,7 @@ header {
 .item-encoche .itemmenu .details-articles p {
   margin-top: 0;
   margin-bottom: 3%;
+  font-size: 2.35em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -535,7 +566,8 @@ header {
 .item-encoche .itemmenu .details-prix {
   position: relative;
   padding-top: 10%;
-  font-size: 2rem;
+  padding-right: 5%;
+  font-size: 2.6rem;
   -webkit-transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: transform 300ms 100ms ease-in-out;
@@ -574,19 +606,21 @@ header {
   right: 0;
   margin: auto;
   margin-left: 0;
-  height: 196px;
+  height: 180px;
   visibility: hidden;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 50px 50px 0;
   background-color: #99e2d0;
 }
 
 .item-encoche .encoche span {
   background-color: white;
   visibility: hidden;
-  width: 20px;
-  height: 20px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  line-height: 20px;
+  line-height: 50px;
   text-align: center;
   color: #99e2d0;
 }
@@ -630,78 +664,78 @@ header {
 }
 
 .entrees .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 
 .entrees .item-encoche:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .entrees .item-encoche:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .entrees .item-encoche:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
 }
 
 .entrees .item-encoche:nth-child(5) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .plats .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 
 .plats .item-encoche:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .plats .item-encoche:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .plats .item-encoche:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
 }
 
 .plats .item-encoche:nth-child(5) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .desserts .item-encoche:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 
 .desserts .item-encoche:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .desserts .item-encoche:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .desserts .item-encoche:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
 }
 
 .desserts .item-encoche:nth-child(4) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 @-webkit-keyframes box-grow {
@@ -713,7 +747,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 100px;
+    width: 150px;
     visibility: visible;
   }
 }
@@ -727,7 +761,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 100px;
+    width: 150px;
     visibility: visible;
   }
 }

@@ -32,7 +32,7 @@ footer {
 
 body {
   margin: 0;
-  overflow: visible;
+  overflow-y: auto;
 }
 
 a {
@@ -327,23 +327,42 @@ header {
       padding-left: 4%;
     }
     .ico-cartes {
-      width: 20%;
       font-size: 3rem;
+      border: greenyellow solid 2px;
+
       .fas {
         color: red;
-        position: absolute;
-        top: 0;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+
         bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      .far {
-        top: 0;
-        bottom: 100%;
-        margin-top: 25%;
-        margin-left: 35%;
+
+        .far {
+          position: absolute;
+          z-index: 10;
+          color: black;
+          bottom: 100%;
+          margin-top: 5%;
+          margin-left: 35%;
+          opacity: 1;
+          &:hover {
+            animation-name: coeur-opacity;
+            animation-duration: 700ms;
+            animation-fill-mode: forwards;
+          }
+        }
       }
     }
+  }
+}
+
+@keyframes coeur-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -360,6 +379,7 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
+  font-size: 3rem;
 }
 
 .souligne-vert {
@@ -372,6 +392,7 @@ header {
   display: flex;
   animation-name: glissement-articles;
   animation-duration: 1500ms;
+
   animation-fill-mode: forwards;
   opacity: 0;
   .itemmenu {
@@ -380,11 +401,11 @@ header {
     justify-content: space-between;
     position: relative;
     background-color: white;
-    margin: 3%;
-    margin-right: 0;
+    margin: 2%;
+    margin-right: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    border-radius: 25px;
+    border-radius: 50px;
     box-shadow: 5px 8px 15px $color-sixth;
 
     &:hover > .details-articles {
@@ -395,14 +416,14 @@ header {
 
     .details-articles {
       position: relative;
-      font-size: 1.7rem;
-      padding-left: 3%;
       padding-top: 3%;
       width: 70%;
 
       h2 {
         margin: 0;
         margin-bottom: 3%;
+        font-size: 3em;
+        font-weight: bolder;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -410,6 +431,8 @@ header {
       p {
         margin-top: 0;
         margin-bottom: 3%;
+        font-size: 2.35em;
+
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -425,7 +448,8 @@ header {
     .details-prix {
       position: relative;
       padding-top: 10%;
-      font-size: 2rem;
+      padding-right: 5%;
+      font-size: 2.6rem;
       transition: transform 300ms 100ms ease-in-out;
     }
     &:hover > .encoche {
@@ -447,18 +471,19 @@ header {
     right: 0;
     margin: auto;
     margin-left: 0;
-    height: 196px;
+    height: 180px;
     visibility: hidden;
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 50px 50px 0;
     background-color: $color-tertiary;
-
     span {
       background-color: white;
       visibility: hidden;
-      width: 20px;
-      height: 20px;
+      font-size: 2.3rem;
+      font-weight: bold;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      line-height: 20px;
+      line-height: 50px;
       text-align: center;
       color: $color-tertiary;
     }
@@ -483,51 +508,51 @@ header {
 }
 
 .entrees .item-encoche:nth-child(1) {
-  animation-delay: 200ms;
+  animation-delay: 700ms;
 }
 .entrees .item-encoche:nth-child(2) {
-  animation-delay: 400ms;
+  animation-delay: 900ms;
 }
 .entrees .item-encoche:nth-child(3) {
-  animation-delay: 600ms;
+  animation-delay: 1100ms;
 }
 .entrees .item-encoche:nth-child(4) {
-  animation-delay: 800ms;
+  animation-delay: 1300ms;
 }
 .entrees .item-encoche:nth-child(5) {
-  animation-delay: 1000ms;
+  animation-delay: 1500ms;
 }
 
 .plats .item-encoche:nth-child(1) {
-  animation-delay: 200ms;
+  animation-delay: 700ms;
 }
 .plats .item-encoche:nth-child(2) {
-  animation-delay: 400ms;
+  animation-delay: 900ms;
 }
 .plats .item-encoche:nth-child(3) {
-  animation-delay: 600ms;
+  animation-delay: 1100ms;
 }
 .plats .item-encoche:nth-child(4) {
-  animation-delay: 800ms;
+  animation-delay: 1300ms;
 }
 .plats .item-encoche:nth-child(5) {
-  animation-delay: 1000ms;
+  animation-delay: 1500ms;
 }
 
 .desserts .item-encoche:nth-child(1) {
-  animation-delay: 200ms;
+  animation-delay: 700ms;
 }
 .desserts .item-encoche:nth-child(2) {
-  animation-delay: 400ms;
+  animation-delay: 900ms;
 }
 .desserts .item-encoche:nth-child(3) {
-  animation-delay: 600ms;
+  animation-delay: 1100ms;
 }
 .desserts .item-encoche:nth-child(4) {
-  animation-delay: 800ms;
+  animation-delay: 1300ms;
 }
 .desserts .item-encoche:nth-child(4) {
-  animation-delay: 1000ms;
+  animation-delay: 1500ms;
 }
 
 @keyframes box-grow {
@@ -541,7 +566,7 @@ header {
   }
 
   100% {
-    width: 100px;
+    width: 150px;
     visibility: visible;
   }
 }
