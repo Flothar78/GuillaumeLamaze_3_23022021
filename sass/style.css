@@ -38,7 +38,7 @@ a {
           align-items: center;
   text-align: center;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   bottom: 0;
   right: 0;
@@ -323,6 +323,41 @@ header {
           box-shadow: 10px 10px 15px #eaeaea;
 }
 
+.restaurants figure figcaption .ico-cartes {
+  font-size: 3.3rem;
+  padding-top: 5%;
+}
+
+.restaurants figure figcaption .ico-cartes .red {
+  color: transparent;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  z-index: 1;
+}
+
+.restaurants figure figcaption .ico-cartes .red .grey {
+  position: absolute;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 1;
+}
+
+.restaurants figure figcaption .ico-cartes .red .grey:hover {
+  -webkit-animation-name: coeur-opacity;
+          animation-name: coeur-opacity;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .restaurants figure figcaption .text {
   width: 80%;
   font-size: 3rem;
@@ -404,7 +439,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3%;
+  padding-top: 6%;
   padding-bottom: 3%;
   border-radius: 10%/50%;
 }
@@ -417,33 +452,38 @@ header {
 }
 
 .titre-cartes > div .ico-cartes {
-  font-size: 3rem;
-  border: greenyellow solid 2px;
-}
-
-.titre-cartes > div .ico-cartes .fas {
-  color: red;
-  text-align: center;
-  z-index: 1;
-  position: relative;
-  bottom: 0;
-}
-
-.titre-cartes > div .ico-cartes .fas .far {
-  position: absolute;
+  font-size: 3.3rem;
+  padding-top: 5%;
   z-index: 10;
-  color: black;
-  bottom: 100%;
-  margin-top: 5%;
-  margin-left: 35%;
+  background-color: #f6f6f6;
+}
+
+.titre-cartes > div .ico-cartes .red {
+  color: transparent;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  z-index: 1;
+}
+
+.titre-cartes > div .ico-cartes .red .grey {
+  position: absolute;
+  color: #f6f6f6;
+  text-shadow: 0 0 5px #000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
   opacity: 1;
 }
 
-.titre-cartes > div .ico-cartes .fas .far:hover {
+.titre-cartes > div .ico-cartes .red .grey:hover {
   -webkit-animation-name: coeur-opacity;
           animation-name: coeur-opacity;
-  -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

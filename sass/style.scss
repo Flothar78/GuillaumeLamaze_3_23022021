@@ -48,7 +48,7 @@ a {
   align-items: center;
   text-align: center;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   bottom: 0;
   right: 0;
@@ -255,6 +255,36 @@ header {
       display: flex;
       border-radius: 0 0 50px 50px;
       box-shadow: 10px 10px 15px $color-sixth;
+      .ico-cartes {
+        font-size: 3.3rem;
+        padding-top: 5%;
+        .red {
+          color: transparent;
+          position: relative;
+
+          background: linear-gradient($color-primary, $color-secondary);
+          background-clip: text;
+
+          z-index: 1;
+          .grey {
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 5px #000;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            opacity: 1;
+            &:hover {
+              animation-name: coeur-opacity;
+              animation-duration: 3000ms;
+              animation-fill-mode: forwards;
+            }
+          }
+        }
+      }
+
       .text {
         width: 80%;
         font-size: 3rem;
@@ -316,7 +346,7 @@ header {
     margin-top: -100px;
     position: absolute;
     display: flex;
-    padding-top: 3%;
+    padding-top: 6%;
     padding-bottom: 3%;
     border-radius: 10%/50%;
 
@@ -327,28 +357,34 @@ header {
       padding-left: 4%;
     }
     .ico-cartes {
-      font-size: 3rem;
-      border: greenyellow solid 2px;
+      font-size: 3.3rem;
 
-      .fas {
-        color: red;
-        text-align: center;
-        z-index: 1;
+      padding-top: 5%;
+      z-index: 10;
+      background-color: $color-fourth;
+
+      .red {
+        color: transparent;
         position: relative;
 
-        bottom: 0;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
 
-        .far {
+        z-index: 1;
+
+        .grey {
           position: absolute;
+          color: $color-fourth;
+          text-shadow: 0 0 5px #000;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
           z-index: 10;
-          color: black;
-          bottom: 100%;
-          margin-top: 5%;
-          margin-left: 35%;
           opacity: 1;
           &:hover {
             animation-name: coeur-opacity;
-            animation-duration: 700ms;
+            animation-duration: 2000ms;
             animation-fill-mode: forwards;
           }
         }
