@@ -259,10 +259,10 @@ header {
         font-size: 3.3rem;
         padding-top: 5%;
         .red {
-          color: transparent;
           position: relative;
-
+          color: transparent;
           background: linear-gradient($color-primary, $color-secondary);
+          -webkit-background-clip: text;
           background-clip: text;
 
           z-index: 1;
@@ -364,13 +364,11 @@ header {
       background-color: $color-fourth;
 
       .red {
-        color: transparent;
         position: relative;
-
+        color: transparent;
         background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
         background-clip: text;
-
-        z-index: 1;
 
         .grey {
           position: absolute;
