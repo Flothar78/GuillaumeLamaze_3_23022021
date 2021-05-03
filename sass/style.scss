@@ -285,25 +285,29 @@ header {
     }
   }
 }
-.la-palette img {
-  @include stretch-pics;
-  border-radius: 8% 8% 0 0;
-  object-position: 50% 100%;
-}
-.la-note img {
-  @include stretch-pics;
-  border-radius: 8% 8% 0 0;
-  object-position: 50% 60%;
-}
-.a-la-francaise img {
-  @include stretch-pics;
-  border-radius: 8% 8% 0 0;
-  object-position: 0 100%;
-}
-.le-delice img {
-  @include stretch-pics;
-  border-radius: 8% 8% 0 0;
-  object-position: 50% 95%;
+
+.restaurants > div {
+  display: block;
+  .la-palette img {
+    @include stretch-pics;
+    border-radius: 8% 8% 0 0;
+    object-position: 50% 100%;
+  }
+  .la-note img {
+    @include stretch-pics;
+    border-radius: 8% 8% 0 0;
+    object-position: 50% 60%;
+  }
+  .a-la-francaise img {
+    @include stretch-pics;
+    border-radius: 8% 8% 0 0;
+    object-position: 0 100%;
+  }
+  .le-delice img {
+    @include stretch-pics;
+    border-radius: 8% 8% 0 0;
+    object-position: 50% 95%;
+  }
 }
 .titre-cartes {
   background-color: $color-fourth;
@@ -670,7 +674,7 @@ footer {
   }
 }
 
-@media all and (min-width: 740px) {
+@media all and (min-width: 780px) {
   main {
     margin-left: 5%;
   }
