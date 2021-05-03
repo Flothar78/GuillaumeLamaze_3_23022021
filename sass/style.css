@@ -520,7 +520,8 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 .souligne-vert {
@@ -579,7 +580,7 @@ header {
 .item-encoche .itemmenu .details-articles h2 {
   margin: 0;
   margin-bottom: 3%;
-  font-size: 3em;
+  font-size: 2.4em;
   font-weight: bolder;
   overflow: hidden;
   white-space: nowrap;
@@ -589,7 +590,7 @@ header {
 .item-encoche .itemmenu .details-articles p {
   margin-top: 0;
   margin-bottom: 3%;
-  font-size: 2.35em;
+  font-size: 2em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
