@@ -16,7 +16,6 @@ footer {
 
 body {
   margin: 0;
-  overflow-y: auto;
 }
 
 a {
@@ -936,5 +935,75 @@ footer .devenir .fa-handshake {
 
 footer .contact {
   padding-bottom: 8%;
+}
+
+@media all and (min-width: 740px) {
+  main {
+    margin-left: 5%;
+  }
+  .restaurants > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants > div .la-palette {
+    max-width: 50%;
+  }
+  .restaurants > div .la-palette .nouveau-vert p {
+    width: 50%;
+    padding-left: 0;
+  }
+  .restaurants > div .la-palette img {
+    width: 100%;
+  }
+  .restaurants > div .la-palette .text {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .la-palette .ico-cartes {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .la-note {
+    max-width: 50%;
+  }
+  .restaurants > div .la-note img {
+    width: 100%;
+  }
+  .restaurants > div .la-note .text {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .la-note .ico-cartes {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .a-la-francaise {
+    max-width: 50%;
+  }
+  .restaurants > div .a-la-francaise img {
+    width: 100%;
+  }
+  .restaurants > div .a-la-francaise .text {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .a-la-francaise .ico-cartes {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .le-delice {
+    max-width: 50%;
+  }
+  .restaurants > div .le-delice img {
+    width: 100%;
+  }
+  .restaurants > div .le-delice .text {
+    font-size: 1.8rem;
+  }
+  .restaurants > div .le-delice .ico-cartes {
+    font-size: 1.8rem;
+  }
+  footer {
+    width: 100%;
+    margin: auto;
+    padding-left: 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

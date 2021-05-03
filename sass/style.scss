@@ -1,19 +1,15 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-
 $color-fourth: #f6f6f6;
 $color-fifth: #353535;
 $color-sixth: #eaeaea;
-
 $color-green: #99e2d0;
-
 @mixin stretch-pics {
   width: 100%;
   height: 450px;
   object-fit: cover;
 }
-
 p,
 h1,
 h2,
@@ -24,22 +20,17 @@ h4,
 footer {
   font-family: "Roboto", sans-serif;
 }
-
 .text-cartes h1,
 .logo-footer {
   font-family: "Shrikhand", cursive;
 }
-
 body {
   margin: 0;
-  overflow-y: auto;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 .loader {
   font-family: "Shrikhand", cursive;
   font-size: 8rem;
@@ -63,7 +54,6 @@ a {
     text-shadow: 1rem 1rem 0.5rem #c5b2dd;
   }
 }
-
 @keyframes entree-site {
   0% {
     color: $color-tertiary;
@@ -80,16 +70,13 @@ a {
     visibility: hidden;
   }
 }
-
 header {
   padding-top: 2.5%;
 }
-
 .logo-index {
   padding-left: 30%;
   padding-bottom: 2.5%;
 }
-
 .localisation {
   background-color: $color-sixth;
   height: 7.5rem;
@@ -110,7 +97,6 @@ header {
     }
   }
 }
-
 .reservez {
   display: flex;
   flex-direction: column;
@@ -150,7 +136,6 @@ header {
     }
   }
 }
-
 .fonctionnement {
   font-size: 2rem;
   h1 {
@@ -205,7 +190,6 @@ header {
     }
   }
 }
-
 .retour-logo {
   display: flex;
   .logo {
@@ -217,7 +201,6 @@ header {
     padding-top: 1%;
   }
 }
-
 .restaurants {
   background-color: $color-fourth;
   padding-top: 6%;
@@ -264,7 +247,6 @@ header {
           background: linear-gradient($color-primary, $color-secondary);
           -webkit-background-clip: text;
           background-clip: text;
-
           z-index: 1;
           .grey {
             position: absolute;
@@ -284,7 +266,6 @@ header {
           }
         }
       }
-
       .text {
         width: 80%;
         font-size: 3rem;
@@ -304,37 +285,31 @@ header {
     }
   }
 }
-
 .la-palette img {
   @include stretch-pics;
   border-radius: 8% 8% 0 0;
   object-position: 50% 100%;
 }
-
 .la-note img {
   @include stretch-pics;
   border-radius: 8% 8% 0 0;
   object-position: 50% 60%;
 }
-
 .a-la-francaise img {
   @include stretch-pics;
   border-radius: 8% 8% 0 0;
   object-position: 0 100%;
 }
-
 .le-delice img {
   @include stretch-pics;
   border-radius: 8% 8% 0 0;
   object-position: 50% 95%;
 }
-
 .titre-cartes {
   background-color: $color-fourth;
   margin: 0;
   margin-top: 2%;
   position: relative;
-
   img {
     width: 100%;
     height: 600px;
@@ -349,7 +324,6 @@ header {
     padding-top: 6%;
     padding-bottom: 3%;
     border-radius: 10%/50%;
-
     .text-cartes {
       width: 80%;
       font-size: 2.3rem;
@@ -358,11 +332,9 @@ header {
     }
     .ico-cartes {
       font-size: 3.3rem;
-
       padding-top: 5%;
       z-index: 10;
       background-color: $color-fourth;
-
       .red {
         position: relative;
         color: transparent;
@@ -695,5 +667,77 @@ footer {
   }
   .contact {
     padding-bottom: 8%;
+  }
+}
+
+@media all and (min-width: 740px) {
+  main {
+    margin-left: 5%;
+  }
+
+  .restaurants > div {
+    display: flex;
+    flex-wrap: wrap;
+    .la-palette {
+      max-width: 50%;
+      .nouveau-vert {
+        p {
+          width: 50%;
+          padding-left: 0;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+      .ico-cartes {
+        font-size: 1.8rem;
+      }
+    }
+    .la-note {
+      max-width: 50%;
+      img {
+        width: 100%;
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+      .ico-cartes {
+        font-size: 1.8rem;
+      }
+    }
+    .a-la-francaise {
+      max-width: 50%;
+      img {
+        width: 100%;
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+      .ico-cartes {
+        font-size: 1.8rem;
+      }
+    }
+
+    .le-delice {
+      max-width: 50%;
+      img {
+        width: 100%;
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+      .ico-cartes {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    margin: auto;
+    padding-left: 5%;
   }
 }
