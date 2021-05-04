@@ -101,7 +101,7 @@ header {
 }
 
 .logo-index {
-  padding-left: 30%;
+  padding-left: 25%;
   padding-bottom: 2.5%;
 }
 
@@ -112,11 +112,10 @@ header {
 }
 
 .localisation form {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .localisation form .fa-map-marker-alt {
-  padding-right: 4%;
   padding-left: 30%;
 }
 
@@ -124,7 +123,7 @@ header {
   height: 100%;
   background-color: #eaeaea;
   border: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   padding-top: 3.5%;
 }
@@ -190,9 +189,9 @@ header {
 }
 
 .fonctionnement h1 {
-  margin-left: 16%;
+  margin-left: 4.5%;
   margin-top: 8%;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .fonctionnement li {
@@ -203,11 +202,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  font-size: 2.3rem;
   margin-top: 3%;
   height: 150px;
-  width: 70%;
+  width: 95%;
   margin: auto;
+  margin-left: 2%;
   margin-bottom: 5%;
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
@@ -286,7 +285,7 @@ header {
 }
 
 .restaurants h1 {
-  padding-left: 6%;
+  margin-left: 2.5%;
   padding-bottom: 3%;
   font-size: 3rem;
   font-weight: bold;
@@ -301,20 +300,17 @@ header {
 
 .restaurants figure .nouveau-vert {
   position: absolute;
+  padding-left: 3%;
+  padding-right: 3%;
   top: 8%;
   right: 5%;
   height: 10%;
-  width: 23.75%;
   background-color: #99e2d0;
+  font-size: 1.2em;
+  line-height: 0.3;
   color: #208f73;
-  font-size: 2.2rem;
   font-weight: bold;
   border-radius: 6%;
-}
-
-.restaurants figure .nouveau-vert p {
-  margin: 6%;
-  padding-left: 10%;
 }
 
 .restaurants figure figcaption {
@@ -328,7 +324,7 @@ header {
 }
 
 .restaurants figure figcaption .ico-cartes {
-  font-size: 3.3rem;
+  font-size: 2.2rem;
   padding-top: 5%;
 }
 
@@ -365,11 +361,9 @@ header {
 
 .restaurants figure figcaption .text {
   width: 80%;
-  font-size: 3rem;
+  font-size: 1.8rem;
   line-height: 0.8rem;
   padding-left: 5%;
-  padding-bottom: 3%;
-  letter-spacing: -4px;
 }
 
 .restaurants figure figcaption .ico {
@@ -388,7 +382,7 @@ header {
 
 .restaurants > div .la-palette img {
   width: 100%;
-  height: 450px;
+  height: 315px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -398,7 +392,7 @@ header {
 
 .restaurants > div .la-note img {
   width: 100%;
-  height: 450px;
+  height: 315px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -408,7 +402,7 @@ header {
 
 .restaurants > div .a-la-francaise img {
   width: 100%;
-  height: 450px;
+  height: 315px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -418,7 +412,7 @@ header {
 
 .restaurants > div .le-delice img {
   width: 100%;
-  height: 450px;
+  height: 315px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -946,7 +940,61 @@ footer .contact {
   padding-bottom: 8%;
 }
 
-@media screen and (min-device-width: 799px) {
+@media screen and (min-width: 799px) {
+  .reservez {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reservez .reservez-un {
+    width: 40%;
+    font-size: 1rem;
+  }
+  .reservez .reservez-deux {
+    width: 30%;
+  }
+  .reservez .explorer {
+    width: 33%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-right: 2%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(90deg, #9356dc, #ff79da);
+  }
+  .fonctionnement h1 {
+    margin-left: 2.5%;
+    font-size: 2rem;
+  }
+  .fonctionnement ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fonctionnement ol li {
+    width: 40%;
+    margin-left: auto;
+  }
+  .fonctionnement ol li span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
   .restaurants > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -965,10 +1013,10 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-palette .text {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .la-palette .ico-cartes {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .la-note {
     max-width: 50%;
@@ -977,10 +1025,10 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-note .text {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .la-note .ico-cartes {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .a-la-francaise {
     max-width: 50%;
@@ -989,10 +1037,10 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .a-la-francaise .text {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .a-la-francaise .ico-cartes {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .le-delice {
     max-width: 50%;
@@ -1001,15 +1049,34 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .le-delice .text {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   .restaurants > div .le-delice .ico-cartes {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
   footer {
     width: 100%;
     margin: auto;
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .explorer {
+    margin: auto;
+    font-size: 1.5rem;
+    padding-right: 2%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background: linear-gradient(190deg, #9356dc, #ff79da);
+  }
+  .fonctionnement ol li {
+    width: 30%;
+    margin: auto;
+  }
+  .restaurants {
+    padding-top: 2%;
+    margin-top: 8%;
   }
 }
 /*# sourceMappingURL=style.css.map */

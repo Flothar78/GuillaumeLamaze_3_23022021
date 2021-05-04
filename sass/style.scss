@@ -7,7 +7,7 @@ $color-sixth: #eaeaea;
 $color-green: #99e2d0;
 @mixin stretch-pics {
   width: 100%;
-  height: 450px;
+  height: 315px;
   object-fit: cover;
 }
 p,
@@ -79,7 +79,7 @@ header {
   padding-top: 2.5%;
 }
 .logo-index {
-  padding-left: 30%;
+  padding-left: 25%;
   padding-bottom: 2.5%;
 }
 .localisation {
@@ -87,16 +87,15 @@ header {
   height: 7.5rem;
   border-top: solid 6px #cfcfcf;
   form {
-    font-size: 2.5rem;
+    font-size: 2rem;
     .fa-map-marker-alt {
-      padding-right: 4%;
       padding-left: 30%;
     }
     input {
       height: 100%;
       background-color: #eaeaea;
       border: none;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       padding-top: 3.5%;
     }
@@ -144,19 +143,19 @@ header {
 .fonctionnement {
   font-size: 2rem;
   h1 {
-    margin-left: 16%;
+    margin-left: 4.5%;
     margin-top: 8%;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   li {
     display: flex;
     align-items: center;
     list-style-type: none;
-    font-size: 2.3rem;
     margin-top: 3%;
     height: 150px;
-    width: 70%;
+    width: 95%;
     margin: auto;
+    margin-left: 2%;
     margin-bottom: 5%;
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
@@ -212,7 +211,7 @@ header {
   margin-top: 15%;
   padding-bottom: 10%;
   h1 {
-    padding-left: 6%;
+    margin-left: 2.5%;
     padding-bottom: 3%;
     font-size: 3rem;
     font-weight: bold;
@@ -224,19 +223,17 @@ header {
     margin-bottom: 6%;
     .nouveau-vert {
       position: absolute;
+      padding-left: 3%;
+      padding-right: 3%;
       top: 8%;
       right: 5%;
       height: 10%;
-      width: 23.75%;
       background-color: $color-green;
+      font-size: 1.2em;
+      line-height: 0.3;
       color: #208f73;
-      font-size: 2.2rem;
       font-weight: bold;
       border-radius: 6%;
-      p {
-        margin: 6%;
-        padding-left: 10%;
-      }
     }
     figcaption {
       background-color: white;
@@ -244,7 +241,7 @@ header {
       border-radius: 0 0 50px 50px;
       box-shadow: 10px 10px 15px $color-sixth;
       .ico-cartes {
-        font-size: 3.3rem;
+        font-size: 2.2rem;
         padding-top: 5%;
         .red {
           position: relative;
@@ -273,11 +270,9 @@ header {
       }
       .text {
         width: 80%;
-        font-size: 3rem;
+        font-size: 1.8rem;
         line-height: 0.8rem;
         padding-left: 5%;
-        padding-bottom: 3%;
-        letter-spacing: -4px;
       }
       .ico {
         width: 20%;
@@ -423,7 +418,6 @@ header {
     padding-right: 3%;
     border-radius: 50px;
     box-shadow: 5px 8px 15px $color-sixth;
-
     &:hover > .details-articles {
       animation-name: reduction-articles;
       animation-duration: 300ms;
@@ -448,7 +442,6 @@ header {
         margin-top: 0;
         margin-bottom: 3%;
         font-size: 2em;
-
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -683,7 +676,51 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media screen and (min-device-width: 799px) {
+@media screen and (min-width: 799px) {
+  .reservez {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .reservez-un {
+      width: 40%;
+      font-size: 1rem;
+    }
+    .reservez-deux {
+      width: 30%;
+    }
+    .explorer {
+      width: 33%;
+      margin: auto;
+      font-size: 1.5rem;
+      padding-right: 2%;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0;
+      background: linear-gradient(90deg, #9356dc, #ff79da);
+    }
+  }
+
+  .fonctionnement {
+    h1 {
+      margin-left: 2.5%;
+      font-size: 2rem;
+    }
+    ol {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+        width: 40%;
+        margin-left: auto;
+        span {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
   .restaurants > div {
     display: flex;
     flex-wrap: wrap;
@@ -699,10 +736,10 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
       .ico-cartes {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
     }
     .la-note {
@@ -711,10 +748,10 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
       .ico-cartes {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
     }
     .a-la-francaise {
@@ -723,10 +760,10 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
       .ico-cartes {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
     }
 
@@ -736,10 +773,10 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
       .ico-cartes {
-        font-size: 1.8rem;
+        font-size: 1.8em;
       }
     }
   }
@@ -748,5 +785,33 @@ footer {
     width: 100%;
     margin: auto;
     padding-left: 5%;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 1024px) {
+  .explorer {
+    margin: auto;
+    font-size: 1.5rem;
+    padding-right: 2%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background: linear-gradient(190deg, #9356dc, #ff79da);
+  }
+
+  .fonctionnement {
+    ol {
+      li {
+        width: 30%;
+        margin: auto;
+      }
+    }
+  }
+  .restaurants {
+    padding-top: 2%;
+    margin-top: 8%;
   }
 }
