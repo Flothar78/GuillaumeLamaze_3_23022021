@@ -680,7 +680,7 @@ footer {
   .reservez {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     .reservez-un {
@@ -689,11 +689,12 @@ footer {
     }
     .reservez-deux {
       width: 30%;
+      font-size: 1.5rem;
     }
     .explorer {
       width: 33%;
       margin: auto;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       padding-right: 2%;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0;
@@ -702,6 +703,8 @@ footer {
   }
 
   .fonctionnement {
+    font-size: 1rem;
+    font-weight: bold;
     h1 {
       margin-left: 2.5%;
       font-size: 2rem;
@@ -737,21 +740,33 @@ footer {
       }
       .text {
         font-size: 1.8em;
+        width: auto;
       }
       .ico-cartes {
         font-size: 1.8em;
+        padding-top: 8%;
+        padding-left: 3%;
       }
     }
     .la-note {
       max-width: 50%;
+      .nouveau-vert {
+        p {
+          width: 50%;
+          padding-left: 0;
+        }
+      }
       img {
         width: 100%;
       }
       .text {
         font-size: 1.8em;
+        width: auto;
       }
       .ico-cartes {
         font-size: 1.8em;
+        padding-top: 8%;
+        padding-left: 3%;
       }
     }
     .a-la-francaise {
@@ -761,9 +776,12 @@ footer {
       }
       .text {
         font-size: 1.8em;
+        width: auto;
       }
       .ico-cartes {
         font-size: 1.8em;
+        padding-top: 8%;
+        padding-left: 3%;
       }
     }
 
@@ -774,9 +792,12 @@ footer {
       }
       .text {
         font-size: 1.8em;
+        width: auto;
       }
       .ico-cartes {
         font-size: 1.8em;
+        padding-top: 8%;
+        padding-left: 3%;
       }
     }
   }

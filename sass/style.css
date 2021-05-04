@@ -949,9 +949,8 @@ footer .contact {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -961,16 +960,21 @@ footer .contact {
   }
   .reservez .reservez-deux {
     width: 30%;
+    font-size: 1.5rem;
   }
   .reservez .explorer {
     width: 33%;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-right: 2%;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     background: -webkit-gradient(linear, left top, right top, from(#9356dc), to(#ff79da));
     background: linear-gradient(90deg, #9356dc, #ff79da);
+  }
+  .fonctionnement {
+    font-size: 1rem;
+    font-weight: bold;
   }
   .fonctionnement h1 {
     margin-left: 2.5%;
@@ -1014,21 +1018,31 @@ footer .contact {
   }
   .restaurants > div .la-palette .text {
     font-size: 1.8em;
+    width: auto;
   }
   .restaurants > div .la-palette .ico-cartes {
     font-size: 1.8em;
+    padding-top: 8%;
+    padding-left: 3%;
   }
   .restaurants > div .la-note {
     max-width: 50%;
+  }
+  .restaurants > div .la-note .nouveau-vert p {
+    width: 50%;
+    padding-left: 0;
   }
   .restaurants > div .la-note img {
     width: 100%;
   }
   .restaurants > div .la-note .text {
     font-size: 1.8em;
+    width: auto;
   }
   .restaurants > div .la-note .ico-cartes {
     font-size: 1.8em;
+    padding-top: 8%;
+    padding-left: 3%;
   }
   .restaurants > div .a-la-francaise {
     max-width: 50%;
@@ -1038,9 +1052,12 @@ footer .contact {
   }
   .restaurants > div .a-la-francaise .text {
     font-size: 1.8em;
+    width: auto;
   }
   .restaurants > div .a-la-francaise .ico-cartes {
     font-size: 1.8em;
+    padding-top: 8%;
+    padding-left: 3%;
   }
   .restaurants > div .le-delice {
     max-width: 50%;
@@ -1050,9 +1067,12 @@ footer .contact {
   }
   .restaurants > div .le-delice .text {
     font-size: 1.8em;
+    width: auto;
   }
   .restaurants > div .le-delice .ico-cartes {
     font-size: 1.8em;
+    padding-top: 8%;
+    padding-left: 3%;
   }
   footer {
     width: 100%;
