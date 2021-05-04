@@ -14,10 +14,6 @@ footer {
   font-family: "Shrikhand", cursive;
 }
 
-body {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -89,6 +85,15 @@ a {
   100% {
     visibility: hidden;
   }
+}
+
+body {
+  margin: 0;
+}
+
+.bloc-page {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 header {
@@ -941,10 +946,7 @@ footer .contact {
   padding-bottom: 8%;
 }
 
-@media screen and (min-device-width: 758px) {
-  main {
-    margin-left: 5%;
-  }
+@media screen and (min-device-width: 999px) {
   .restaurants > div {
     display: -webkit-box;
     display: -ms-flexbox;
