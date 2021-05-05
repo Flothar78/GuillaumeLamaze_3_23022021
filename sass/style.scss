@@ -840,6 +840,12 @@ footer {
     }
   }
   .reservez {
+    .reservez-un {
+      font-size: 2rem;
+    }
+    .reservez-deux {
+      font-size: 2.5rem;
+    }
     .explorer {
       margin: auto;
       font-size: 2.5rem;
@@ -852,6 +858,9 @@ footer {
     }
   }
   .fonctionnement {
+    h1 {
+      margin-bottom: 7%;
+    }
     ol {
       li {
         width: 30%;

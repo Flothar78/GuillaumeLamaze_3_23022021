@@ -1102,6 +1102,12 @@ footer .contact {
     padding-left: 1%;
     margin-left: 0;
   }
+  .reservez .reservez-un {
+    font-size: 2rem;
+  }
+  .reservez .reservez-deux {
+    font-size: 2.5rem;
+  }
   .reservez .explorer {
     margin: auto;
     font-size: 2.5rem;
@@ -1111,6 +1117,9 @@ footer .contact {
     border-top-right-radius: 0;
     border-bottom-right-radius: 4rem;
     background: linear-gradient(190deg, #9356dc, #ff79da);
+  }
+  .fonctionnement h1 {
+    margin-bottom: 7%;
   }
   .fonctionnement ol li {
     width: 30%;
