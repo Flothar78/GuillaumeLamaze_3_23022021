@@ -79,18 +79,20 @@ header {
   padding-top: 2.5%;
 }
 .logo-index {
-  padding-left: 25%;
+  text-align: center;
   padding-bottom: 2.5%;
 }
 .localisation {
   background-color: $color-sixth;
   height: 7.5rem;
   border-top: solid 6px #cfcfcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   form {
     font-size: 2rem;
-    .fa-map-marker-alt {
-      padding-left: 30%;
-    }
+    padding-left: 20%;
     input {
       height: 100%;
       background-color: #eaeaea;
@@ -105,7 +107,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 6%;
+  padding-bottom: 10%;
   .reservez-un {
     padding-top: 5%;
     font-size: 1.8rem;
@@ -243,6 +245,9 @@ header {
       .ico-cartes {
         font-size: 2.2rem;
         padding-top: 5%;
+        position: absolute;
+        right: 0;
+        margin-right: 3%;
         .red {
           position: relative;
           color: transparent;
@@ -676,38 +681,36 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 768px) {
   .reservez {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
     .reservez-un {
-      width: 40%;
       font-size: 1rem;
     }
     .reservez-deux {
-      width: 30%;
+      margin-top: 22%;
       font-size: 1.5rem;
     }
     .explorer {
-      width: 33%;
       margin: auto;
-      font-size: 1.7rem;
+      margin-top: 7%;
+      font-size: 2.5rem;
       padding-right: 2%;
-      border-bottom-left-radius: 0;
       border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       background: linear-gradient(90deg, #9356dc, #ff79da);
     }
   }
 
   .fonctionnement {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: bold;
     h1 {
       margin-left: 2.5%;
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
     ol {
       display: flex;
@@ -716,12 +719,21 @@ footer {
       li {
         width: 40%;
         margin-left: auto;
+        height: 7rem;
         span {
           width: 50px;
           height: 50px;
           border-radius: 50%;
         }
       }
+    }
+  }
+  .restaurants {
+    margin-top: 6%;
+    padding-top: 3%;
+    h1 {
+      margin-left: 2.5%;
+      font-size: 2.4rem;
     }
   }
   .restaurants > div {
@@ -801,11 +813,12 @@ footer {
       }
     }
   }
-
   footer {
     width: 100%;
     margin: auto;
     padding-left: 5%;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -814,15 +827,23 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 1024px) {
-  .explorer {
-    margin: auto;
-    font-size: 1.5rem;
-    padding-right: 2%;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 0;
-    background: linear-gradient(190deg, #9356dc, #ff79da);
+  .localisation {
+    form {
+      padding-left: 15%;
+    }
   }
-
+  .reservez {
+    .explorer {
+      margin: auto;
+      font-size: 2.5rem;
+      padding-right: 2%;
+      margin-top: 10%;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 4rem;
+      background: linear-gradient(190deg, #9356dc, #ff79da);
+    }
+  }
   .fonctionnement {
     ol {
       li {
