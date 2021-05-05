@@ -89,10 +89,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  .fa-map-marker-alt {
+    margin-left: 20%;
+    font-size: 1.6rem;
+  }
   form {
     font-size: 2rem;
-    padding-left: 20%;
+    font-weight: bold;
+    margin-left: 5%;
     input {
       height: 100%;
       background-color: #eaeaea;
@@ -114,7 +118,7 @@ header {
     white-space: nowrap;
   }
   .reservez-deux {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     white-space: nowrap;
   }
   .explorer {
@@ -682,21 +686,20 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 768px) {
+  .localisation {
+    form {
+      margin-left: 0;
+    }
+  }
   .reservez {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
     .reservez-un {
-      font-size: 1rem;
+      font-size: 1.3rem;
+      margin-top: 2%;
     }
     .reservez-deux {
-      margin-top: 22%;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
     .explorer {
-      margin: auto;
-      margin-top: 7%;
       font-size: 2.5rem;
       padding-right: 2%;
       border-top-right-radius: 0;
@@ -721,8 +724,8 @@ footer {
         margin-left: auto;
         height: 7rem;
         span {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 45px;
           border-radius: 50%;
         }
       }
@@ -751,11 +754,11 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: auto;
       }
       .ico-cartes {
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 8%;
         padding-left: 3%;
       }
@@ -772,11 +775,11 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: auto;
       }
       .ico-cartes {
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 8%;
         padding-left: 3%;
       }
@@ -787,11 +790,11 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: auto;
       }
       .ico-cartes {
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 8%;
         padding-left: 3%;
       }
@@ -803,11 +806,11 @@ footer {
         width: 100%;
       }
       .text {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: auto;
       }
       .ico-cartes {
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 8%;
         padding-left: 3%;
       }
@@ -829,7 +832,8 @@ footer {
 @media screen and (min-width: 1024px) {
   .localisation {
     form {
-      padding-left: 15%;
+      padding-left: 1%;
+      margin-left: 0;
     }
   }
   .reservez {

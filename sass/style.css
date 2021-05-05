@@ -120,9 +120,15 @@ header {
           align-items: center;
 }
 
+.localisation .fa-map-marker-alt {
+  margin-left: 20%;
+  font-size: 1.6rem;
+}
+
 .localisation form {
   font-size: 2rem;
-  padding-left: 20%;
+  font-weight: bold;
+  margin-left: 5%;
 }
 
 .localisation form input {
@@ -155,7 +161,7 @@ header {
 }
 
 .reservez .reservez-deux {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   white-space: nowrap;
 }
 
@@ -950,29 +956,17 @@ footer .contact {
 }
 
 @media screen and (min-width: 768px) {
-  .reservez {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .localisation form {
+    margin-left: 0;
   }
   .reservez .reservez-un {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 2%;
   }
   .reservez .reservez-deux {
-    margin-top: 22%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .reservez .explorer {
-    margin: auto;
-    margin-top: 7%;
     font-size: 2.5rem;
     padding-right: 2%;
     border-top-right-radius: 0;
@@ -1004,8 +998,8 @@ footer .contact {
     height: 7rem;
   }
   .fonctionnement ol li span {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 45px;
     border-radius: 50%;
   }
   .restaurants {
@@ -1034,11 +1028,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-palette .text {
-    font-size: 1.8em;
+    font-size: 1.6em;
     width: auto;
   }
   .restaurants > div .la-palette .ico-cartes {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-top: 8%;
     padding-left: 3%;
   }
@@ -1053,11 +1047,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-note .text {
-    font-size: 1.8em;
+    font-size: 1.6em;
     width: auto;
   }
   .restaurants > div .la-note .ico-cartes {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-top: 8%;
     padding-left: 3%;
   }
@@ -1068,11 +1062,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .a-la-francaise .text {
-    font-size: 1.8em;
+    font-size: 1.6em;
     width: auto;
   }
   .restaurants > div .a-la-francaise .ico-cartes {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-top: 8%;
     padding-left: 3%;
   }
@@ -1083,11 +1077,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .le-delice .text {
-    font-size: 1.8em;
+    font-size: 1.6em;
     width: auto;
   }
   .restaurants > div .le-delice .ico-cartes {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-top: 8%;
     padding-left: 3%;
   }
@@ -1102,7 +1096,8 @@ footer .contact {
 
 @media screen and (min-width: 1024px) {
   .localisation form {
-    padding-left: 15%;
+    padding-left: 1%;
+    margin-left: 0;
   }
   .reservez .explorer {
     margin: auto;
