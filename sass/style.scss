@@ -489,7 +489,7 @@ header {
     right: 0;
     margin: auto;
     margin-left: 0;
-    height: 180px;
+    height: 100%;
     visibility: hidden;
     border-radius: 0 50px 50px 0;
     background-color: $color-tertiary;
@@ -686,6 +686,9 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 768px) {
+  header {
+    padding-top: 0;
+  }
   .logo-index {
     background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
@@ -820,6 +823,11 @@ footer {
       }
     }
   }
+  .retour-logo {
+    .logo {
+      margin-left: 21%;
+    }
+  }
   .titre-cartes {
     img {
       height: 200px;
@@ -831,6 +839,7 @@ footer {
       position: initial;
       .text-cartes {
         padding-left: 6%;
+        font-size: 1.5em;
         h1 {
           margin-top: 3%;
           margin-bottom: 1%;
@@ -843,17 +852,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     padding-right: 3%;
     margin-top: 0;
     padding-top: 0;
     section {
       width: 50%;
-      .entrees > h2,
-      .plats > h2,
-      .desserts > h2 {
-        margin-left: 25%;
-        margin-top: auto;
+      h2 {
+        font-size: 1.7em;
       }
     }
     .desserts {
@@ -862,22 +867,30 @@ footer {
     .commander {
       width: 100%;
       padding-bottom: 10%;
-      input {
-        margin-left: 0;
-      }
     }
     .item-encoche {
       .itemmenu {
+        width: 90%;
         .details-articles {
+          width: 85%;
           h2 {
-            font-size: 1em;
+            font-size: 1.3em;
           }
           p {
-            font-size: 1em;
+            font-size: 1.3em;
           }
         }
         .details-prix {
-          font-size: 1em;
+          font-size: 1.3em;
+        }
+        .encoche {
+          max-width: 25%;
+          span {
+            font-size: 1.3rem;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+          }
         }
       }
     }
@@ -888,6 +901,10 @@ footer {
     padding-left: 5%;
     font-size: 2rem;
     line-height: 3rem;
+    padding-bottom: 0;
+    .logo-footer {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -899,28 +916,36 @@ footer {
   .logo-index {
     background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
+    padding-bottom: 0;
   }
   .localisation {
+    height: 3.5rem;
     .fa-map-marker-alt {
       margin-left: 13%;
+      font-size: 1rem;
     }
     form {
       padding-left: 1%;
       margin-left: 0;
+      input {
+        font-size: 1.3rem;
+      }
     }
   }
   .reservez {
+    padding-bottom: 0;
     .reservez-un {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     .reservez-deux {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
     .explorer {
       margin: auto;
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       padding-right: 2%;
       margin-top: 2%;
+      padding-bottom: 3%;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 4rem;
@@ -928,8 +953,11 @@ footer {
     }
   }
   .fonctionnement {
+    font-size: 1.3rem;
     h1 {
-      margin-bottom: 7%;
+      margin-bottom: 2%;
+      margin-top: 2%;
+      font-size: 1.7rem;
     }
     ol {
       li {
@@ -940,6 +968,32 @@ footer {
   }
   .restaurants {
     padding-top: 2%;
-    margin-top: 8%;
+    padding-bottom: 0;
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .retour-logo .logo {
+    margin-left: 25%;
+  }
+  .titre-cartes img {
+    height: 250px;
+    object-position: 0 58%;
+  }
+  .main-cartes {
+    .item-encoche {
+      .itemmenu {
+        .encoche {
+          max-width: 20%;
+        }
+      }
+    }
+  }
+  footer {
+    font-size: 1.7rem;
+    .contact {
+      padding-bottom: 0;
+    }
   }
 }

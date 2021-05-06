@@ -665,7 +665,7 @@ header {
   right: 0;
   margin: auto;
   margin-left: 0;
-  height: 180px;
+  height: 100%;
   visibility: hidden;
   border-radius: 0 50px 50px 0;
   background-color: #99e2d0;
@@ -956,6 +956,9 @@ footer .contact {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    padding-top: 0;
+  }
   .logo-index {
     background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
@@ -1089,6 +1092,9 @@ footer .contact {
     padding-top: 8%;
     padding-left: 3%;
   }
+  .retour-logo .logo {
+    margin-left: 21%;
+  }
   .titre-cartes img {
     height: 200px;
     -o-object-position: 0 57%;
@@ -1101,6 +1107,7 @@ footer .contact {
   }
   .titre-cartes > div .text-cartes {
     padding-left: 6%;
+    font-size: 1.5em;
   }
   .titre-cartes > div .text-cartes h1 {
     margin-top: 3%;
@@ -1123,11 +1130,8 @@ footer .contact {
   .main-cartes section {
     width: 50%;
   }
-  .main-cartes section .entrees > h2,
-  .main-cartes section .plats > h2,
-  .main-cartes section .desserts > h2 {
-    margin-left: 25%;
-    margin-top: auto;
+  .main-cartes section h2 {
+    font-size: 1.7em;
   }
   .main-cartes .desserts {
     padding-left: 27%;
@@ -1136,17 +1140,29 @@ footer .contact {
     width: 100%;
     padding-bottom: 10%;
   }
-  .main-cartes .commander input {
-    margin-left: 0;
+  .main-cartes .item-encoche .itemmenu {
+    width: 90%;
+  }
+  .main-cartes .item-encoche .itemmenu .details-articles {
+    width: 85%;
   }
   .main-cartes .item-encoche .itemmenu .details-articles h2 {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .main-cartes .item-encoche .itemmenu .details-articles p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .main-cartes .item-encoche .itemmenu .details-prix {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+  .main-cartes .item-encoche .itemmenu .encoche {
+    max-width: 25%;
+  }
+  .main-cartes .item-encoche .itemmenu .encoche span {
+    font-size: 1.3rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
   footer {
     width: 100%;
@@ -1154,6 +1170,10 @@ footer .contact {
     padding-left: 5%;
     font-size: 2rem;
     line-height: 3rem;
+    padding-bottom: 0;
+  }
+  footer .logo-footer {
+    padding-bottom: 0;
   }
 }
 
@@ -1161,32 +1181,49 @@ footer .contact {
   .logo-index {
     background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
+    padding-bottom: 0;
+  }
+  .localisation {
+    height: 3.5rem;
   }
   .localisation .fa-map-marker-alt {
     margin-left: 13%;
+    font-size: 1rem;
   }
   .localisation form {
     padding-left: 1%;
     margin-left: 0;
   }
+  .localisation form input {
+    font-size: 1.3rem;
+  }
+  .reservez {
+    padding-bottom: 0;
+  }
   .reservez .reservez-un {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .reservez .reservez-deux {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .reservez .explorer {
     margin: auto;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding-right: 2%;
     margin-top: 2%;
+    padding-bottom: 3%;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 4rem;
     background: linear-gradient(190deg, #9356dc, #ff79da);
   }
+  .fonctionnement {
+    font-size: 1.3rem;
+  }
   .fonctionnement h1 {
-    margin-bottom: 7%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1.7rem;
   }
   .fonctionnement ol li {
     width: 30%;
@@ -1194,7 +1231,27 @@ footer .contact {
   }
   .restaurants {
     padding-top: 2%;
-    margin-top: 8%;
+    padding-bottom: 0;
+  }
+  .restaurants h1 {
+    font-size: 1.7rem;
+  }
+  .retour-logo .logo {
+    margin-left: 25%;
+  }
+  .titre-cartes img {
+    height: 250px;
+    -o-object-position: 0 58%;
+       object-position: 0 58%;
+  }
+  .main-cartes .item-encoche .itemmenu .encoche {
+    max-width: 20%;
+  }
+  footer {
+    font-size: 1.7rem;
+  }
+  footer .contact {
+    padding-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
