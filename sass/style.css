@@ -464,7 +464,7 @@ header {
 
 .titre-cartes > div .text-cartes {
   width: 80%;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   line-height: 3rem;
   padding-left: 4%;
 }
@@ -1088,6 +1088,65 @@ footer .contact {
     font-size: 1.6em;
     padding-top: 8%;
     padding-left: 3%;
+  }
+  .titre-cartes img {
+    height: 200px;
+    -o-object-position: 0 57%;
+       object-position: 0 57%;
+  }
+  .titre-cartes > div {
+    margin-top: 0;
+    padding-top: 0;
+    position: initial;
+  }
+  .titre-cartes > div .text-cartes {
+    padding-left: 6%;
+  }
+  .titre-cartes > div .text-cartes h1 {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding-top: 4%;
+  }
+  .main-cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 3%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .main-cartes section {
+    width: 50%;
+  }
+  .main-cartes section .entrees > h2,
+  .main-cartes section .plats > h2,
+  .main-cartes section .desserts > h2 {
+    margin-left: 25%;
+    margin-top: auto;
+  }
+  .main-cartes .desserts {
+    padding-left: 27%;
+  }
+  .main-cartes .commander {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  .main-cartes .commander input {
+    margin-left: 0;
+  }
+  .main-cartes .item-encoche .itemmenu .details-articles h2 {
+    font-size: 1em;
+  }
+  .main-cartes .item-encoche .itemmenu .details-articles p {
+    font-size: 1em;
+  }
+  .main-cartes .item-encoche .itemmenu .details-prix {
+    font-size: 1em;
   }
   footer {
     width: 100%;
