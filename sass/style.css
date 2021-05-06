@@ -956,6 +956,10 @@ footer .contact {
 }
 
 @media screen and (min-width: 768px) {
+  .logo-index {
+    background: linear-gradient(10deg, #9356dc, #ff79da);
+    padding-top: 0;
+  }
   .localisation form {
     margin-left: 0;
   }
