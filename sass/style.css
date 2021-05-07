@@ -107,7 +107,7 @@ header {
 
 .localisation {
   background-color: #eaeaea;
-  height: 7.5rem;
+  height: 3.6rem;
   border-top: solid 6px #cfcfcf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,11 +122,11 @@ header {
 
 .localisation .fa-map-marker-alt {
   margin-left: 20%;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .localisation form {
-  font-size: 2.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-left: 5%;
 }
@@ -135,7 +135,7 @@ header {
   height: 100%;
   background-color: #eaeaea;
   border: none;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-top: 3.5%;
 }
@@ -156,29 +156,29 @@ header {
 
 .reservez .reservez-un {
   padding-top: 5%;
-  font-size: 1.8rem;
+  font-size: 0.9rem;
   white-space: nowrap;
 }
 
 .reservez .reservez-deux {
-  font-size: 2.3rem;
+  font-size: 1.1rem;
   white-space: nowrap;
 }
 
 .reservez .explorer {
-  font-size: 2.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   white-space: nowrap;
   color: white;
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-  border-top-left-radius: 4rem;
-  border-bottom-left-radius: 4rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
   background: linear-gradient(-45deg, #9356dc, #ff79da);
   opacity: 1;
   -webkit-box-shadow: 5px 5px 20px #353535;
@@ -197,13 +197,13 @@ header {
 }
 
 .fonctionnement {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .fonctionnement h1 {
   margin-left: 4.5%;
   margin-top: 8%;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .fonctionnement li {
@@ -215,15 +215,15 @@ header {
           align-items: center;
   list-style-type: none;
   margin-top: 3%;
-  height: 150px;
+  height: 75px;
   width: 95%;
   margin: auto;
   margin-left: 2%;
   margin-bottom: 5%;
-  border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
   opacity: 1;
   -webkit-box-shadow: 10px 10px 15px #eaeaea;
           box-shadow: 10px 10px 15px #eaeaea;
@@ -254,13 +254,13 @@ header {
 
 .fonctionnement li span {
   background-color: #9356dc;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   padding-top: 4px;
   margin-right: 8%;
   margin-left: -3%;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,7 +284,7 @@ header {
 }
 
 .retour-logo .retour-accueil {
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding-left: 3%;
   padding-top: 1%;
 }
@@ -299,7 +299,7 @@ header {
 .restaurants h1 {
   margin-left: 4.5%;
   padding-bottom: 3%;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -318,7 +318,7 @@ header {
   right: 5%;
   height: 10%;
   background-color: #99e2d0;
-  font-size: 1.2em;
+  font-size: 0.6em;
   line-height: 0.3;
   color: #208f73;
   font-weight: bold;
@@ -330,13 +330,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 25px 25px;
   -webkit-box-shadow: 10px 10px 15px #eaeaea;
           box-shadow: 10px 10px 15px #eaeaea;
 }
 
 .restaurants figure figcaption .ico-cartes {
-  font-size: 2.2rem;
+  font-size: 1.1rem;
   padding-top: 5%;
   position: absolute;
   right: 0;
@@ -376,14 +376,14 @@ header {
 
 .restaurants figure figcaption .text {
   width: 80%;
-  font-size: 1.8rem;
+  font-size: 0.9rem;
   line-height: 0.8rem;
   padding-left: 5%;
 }
 
 .restaurants figure figcaption .ico {
   width: 20%;
-  font-size: 4.5rem;
+  font-size: 2.2rem;
 }
 
 .restaurants figure figcaption .ico .fa-heart {
@@ -444,7 +444,7 @@ header {
 
 .titre-cartes img {
   width: 100%;
-  height: 600px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -452,7 +452,7 @@ header {
 .titre-cartes > div {
   background-color: #f6f6f6;
   width: 100%;
-  margin-top: -100px;
+  margin-top: -50px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,13 +464,13 @@ header {
 
 .titre-cartes > div .text-cartes {
   width: 80%;
-  font-size: 1.9rem;
+  font-size: 0.9rem;
   line-height: 3rem;
   padding-left: 4%;
 }
 
 .titre-cartes > div .ico-cartes {
-  font-size: 3.3rem;
+  font-size: 1.6rem;
   padding-top: 5%;
   z-index: 10;
   background-color: #f6f6f6;
@@ -537,7 +537,7 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 
@@ -574,7 +574,7 @@ header {
   margin-right: 3%;
   padding-left: 3%;
   padding-right: 3%;
-  border-radius: 50px;
+  border-radius: 25px;
   -webkit-box-shadow: 5px 8px 15px #eaeaea;
           box-shadow: 5px 8px 15px #eaeaea;
 }
@@ -597,7 +597,7 @@ header {
 .item-encoche .itemmenu .details-articles h2 {
   margin: 0;
   margin-bottom: 3%;
-  font-size: 2.4em;
+  font-size: 1.2em;
   font-weight: bolder;
   overflow: hidden;
   white-space: nowrap;
@@ -607,7 +607,7 @@ header {
 .item-encoche .itemmenu .details-articles p {
   margin-top: 0;
   margin-bottom: 3%;
-  font-size: 2em;
+  font-size: 1em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -626,7 +626,7 @@ header {
   position: relative;
   padding-top: 10%;
   padding-right: 5%;
-  font-size: 2.6rem;
+  font-size: 1.3rem;
   -webkit-transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: transform 300ms 100ms ease-in-out;
@@ -667,19 +667,19 @@ header {
   margin-left: 0;
   height: 100%;
   visibility: hidden;
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 25px 25px 0;
   background-color: #99e2d0;
 }
 
 .item-encoche .encoche span {
   background-color: white;
   visibility: hidden;
-  font-size: 2.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 25px;
   text-align: center;
   color: #99e2d0;
 }
@@ -806,7 +806,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 150px;
+    width: 75px;
     visibility: visible;
   }
 }
@@ -820,7 +820,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 150px;
+    width: 75px;
     visibility: visible;
   }
 }
@@ -900,15 +900,15 @@ header {
 .commander input {
   width: 40%;
   margin-left: 30%;
-  height: 6rem;
+  height: 3rem;
   color: white;
-  font-size: 2.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   border: transparent;
-  border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
   -webkit-box-shadow: 5px 5px 20px #353535;
           box-shadow: 5px 5px 20px #353535;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
@@ -929,7 +929,7 @@ header {
 footer {
   color: white;
   background-color: #353535;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   padding-left: 6%;
   padding-bottom: 2%;
   line-height: 6rem;
@@ -948,7 +948,7 @@ footer .devenir .fa-handshake {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-right: 6%;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 footer .contact {
@@ -1244,13 +1244,6 @@ footer .contact {
   }
   footer .contact {
     padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  main {
-    max-width: 1300px;
-    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
