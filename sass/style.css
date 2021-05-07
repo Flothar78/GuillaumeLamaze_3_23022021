@@ -21,7 +21,7 @@ a {
 
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 8rem;
+  font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,12 +214,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  margin-top: 3%;
   height: 75px;
-  width: 95%;
-  margin: auto;
-  margin-left: 2%;
-  margin-bottom: 5%;
+  width: 90%;
+  margin-top: 8%;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
@@ -397,7 +394,7 @@ header {
 
 .restaurants > div .la-palette img {
   width: 100%;
-  height: 315px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -407,7 +404,7 @@ header {
 
 .restaurants > div .la-note img {
   width: 100%;
-  height: 315px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -417,7 +414,7 @@ header {
 
 .restaurants > div .a-la-francaise img {
   width: 100%;
-  height: 315px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -427,7 +424,7 @@ header {
 
 .restaurants > div .le-delice img {
   width: 100%;
-  height: 315px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -932,7 +929,7 @@ footer {
   font-size: 1.2rem;
   padding-left: 6%;
   padding-bottom: 2%;
-  line-height: 6rem;
+  line-height: 2rem;
 }
 
 footer .logo-footer {
@@ -947,7 +944,7 @@ footer .proposer .fa-utensils {
 footer .devenir .fa-handshake {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  margin-right: 6%;
+  margin-right: 3%;
   font-size: 1.3rem;
 }
 
