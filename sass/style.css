@@ -960,7 +960,6 @@ footer .contact {
     padding-top: 0;
   }
   .logo-index {
-    background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
   }
   .localisation form {
@@ -1035,12 +1034,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-palette .text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     width: auto;
   }
   .restaurants > div .la-palette .ico-cartes {
-    font-size: 1.6em;
-    padding-top: 8%;
+    font-size: 1.3em;
     padding-left: 3%;
   }
   .restaurants > div .la-note {
@@ -1054,12 +1052,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .la-note .text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     width: auto;
   }
   .restaurants > div .la-note .ico-cartes {
-    font-size: 1.6em;
-    padding-top: 8%;
+    font-size: 1.3em;
     padding-left: 3%;
   }
   .restaurants > div .a-la-francaise {
@@ -1069,12 +1066,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .a-la-francaise .text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     width: auto;
   }
   .restaurants > div .a-la-francaise .ico-cartes {
-    font-size: 1.6em;
-    padding-top: 8%;
+    font-size: 1.3em;
     padding-left: 3%;
   }
   .restaurants > div .le-delice {
@@ -1084,12 +1080,11 @@ footer .contact {
     width: 100%;
   }
   .restaurants > div .le-delice .text {
-    font-size: 1.6em;
+    font-size: 1.3em;
     width: auto;
   }
   .restaurants > div .le-delice .ico-cartes {
-    font-size: 1.6em;
-    padding-top: 8%;
+    font-size: 1.3em;
     padding-left: 3%;
   }
   .retour-logo .logo {
@@ -1168,18 +1163,20 @@ footer .contact {
     width: 100%;
     margin: auto;
     padding-left: 5%;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     padding-bottom: 0;
   }
   footer .logo-footer {
     padding-bottom: 0;
   }
+  footer .devenir .fa-handshake {
+    margin-right: 4.5%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .logo-index {
-    background: linear-gradient(10deg, #9356dc, #ff79da);
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1194,24 +1191,19 @@ footer .contact {
     padding-left: 1%;
     margin-left: 0;
   }
-  .localisation form input {
-    font-size: 1.3rem;
-  }
   .reservez {
     padding-bottom: 0;
   }
   .reservez .reservez-un {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .reservez .reservez-deux {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .reservez .explorer {
-    margin: auto;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 0.5em;
     padding-right: 2%;
-    margin-top: 2%;
-    padding-bottom: 3%;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 4rem;
@@ -1252,6 +1244,13 @@ footer .contact {
   }
   footer .contact {
     padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    max-width: 1300px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
