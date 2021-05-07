@@ -7,7 +7,7 @@ $color-sixth: #eaeaea;
 $color-green: #99e2d0;
 @mixin stretch-pics {
   width: 100%;
-  height: 140px;
+  height: 175px;
   object-fit: cover;
 }
 p,
@@ -31,7 +31,7 @@ a {
 }
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,24 +84,24 @@ header {
 }
 .localisation {
   background-color: $color-sixth;
-  height: 3.6rem;
-  border-top: solid 6px #cfcfcf;
+  height: 2.7rem;
+  border-top: solid 9px #cfcfcf;
   display: flex;
   justify-content: center;
   align-items: center;
   .fa-map-marker-alt {
     margin-left: 20%;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   form {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-left: 5%;
+    margin-left: 3%;
     input {
       height: 100%;
       background-color: #eaeaea;
       border: none;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: bold;
       padding-top: 3.5%;
     }
@@ -114,35 +114,36 @@ header {
   padding-bottom: 10%;
   .reservez-un {
     padding-top: 5%;
-    font-size: 0.9rem;
+    font-size: 0.675rem;
+    font-weight: bold;
     white-space: nowrap;
   }
   .reservez-deux {
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: nowrap;
   }
   .explorer {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     padding-left: 1rem;
     padding-right: 1rem;
     white-space: nowrap;
     color: white;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
     background: linear-gradient(-45deg, $color-primary, $color-secondary);
     opacity: 1;
-    box-shadow: 5px 5px 20px $color-fifth;
+    box-shadow: 2px 2px 10px $color-fifth;
     transition: box-shadow 200ms, opacity 200ms;
     &:hover {
       background: linear-gradient(-45deg, $color-primary, $color-secondary);
       opacity: 0.8;
-      box-shadow: 10px 10px 20px $color-fifth;
+      box-shadow: 7px 7px 14px $color-fifth;
     }
   }
 }
@@ -151,27 +152,25 @@ header {
   h1 {
     margin-left: 4.5%;
     margin-top: 8%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   li {
     display: flex;
     align-items: center;
     list-style-type: none;
-
-    height: 75px;
+    height: 55px;
     width: 90%;
     margin-top: 8%;
-
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.12rem;
+    border-bottom-right-radius: 1.12rem;
+    border-top-left-radius: 1.12rem;
+    border-bottom-left-radius: 1.12rem;
     opacity: 1;
-    box-shadow: 10px 10px 15px $color-sixth;
+    box-shadow: 4px 4px 10px $color-sixth;
     transition: opacity 300ms, box-shadow 300ms;
     &:hover {
       opacity: 0.6;
-      box-shadow: 12px 12px 15px #d6cbcb;
+      box-shadow: 10px 10px 15px #d6cbcb;
     }
     .fa-mobile-alt {
       padding-right: 9.5%;
@@ -185,8 +184,8 @@ header {
     }
     span {
       background-color: $color-primary;
-      font-size: 0.8rem;
-      padding-top: 4px;
+      font-size: 0.6rem;
+      padding-top: 3px;
       margin-right: 8%;
       margin-left: -3%;
       color: white;
@@ -205,7 +204,7 @@ header {
     margin-left: 23%;
   }
   .retour-accueil {
-    font-size: 1.5rem;
+    font-size: 1.12rem;
     padding-left: 3%;
     padding-top: 1%;
   }
@@ -217,7 +216,7 @@ header {
   padding-bottom: 10%;
   h1 {
     margin-left: 4.5%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -234,7 +233,7 @@ header {
       right: 5%;
       height: 10%;
       background-color: $color-green;
-      font-size: 0.6em;
+      font-size: 0.75em;
       line-height: 0.3;
       color: #208f73;
       font-weight: bold;
@@ -243,10 +242,10 @@ header {
     figcaption {
       background-color: white;
       display: flex;
-      border-radius: 0 0 25px 25px;
+      border-radius: 0 0 20px 20px;
       box-shadow: 10px 10px 15px $color-sixth;
       .ico-cartes {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         padding-top: 5%;
         position: absolute;
         right: 0;
@@ -278,13 +277,13 @@ header {
       }
       .text {
         width: 80%;
-        font-size: 0.9rem;
-        line-height: 0.8rem;
+        font-size: 1rem;
+        line-height: 0.6rem;
         padding-left: 5%;
       }
       .ico {
         width: 20%;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         .fa-heart {
           float: right;
           margin: 40%;
@@ -324,26 +323,26 @@ header {
   position: relative;
   img {
     width: 100%;
-    height: 300px;
+    height: 225px;
     object-fit: cover;
   }
   > div {
     background-color: $color-fourth;
     width: 100%;
-    margin-top: -50px;
+    margin-top: -32px;
     position: absolute;
     display: flex;
-    padding-top: 6%;
-    padding-bottom: 3%;
+    padding-top: 4%;
+
     border-radius: 10%/50%;
     .text-cartes {
       width: 80%;
       font-size: 0.9rem;
-      line-height: 3rem;
-      padding-left: 4%;
+      line-height: 2rem;
+      padding-left: 8%;
     }
     .ico-cartes {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       padding-top: 5%;
       z-index: 10;
       background-color: $color-fourth;
@@ -396,21 +395,19 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin-bottom: 0;
 }
 
 .souligne-vert {
   padding-bottom: 1.5%;
-  border-bottom: $color-green 6px solid;
+  border-bottom: $color-green 4px solid;
 }
-
 .item-encoche {
   width: 100%;
   display: flex;
   animation-name: glissement-articles;
   animation-duration: 1500ms;
-
   animation-fill-mode: forwards;
   opacity: 0;
   .itemmenu {
@@ -423,7 +420,7 @@ header {
     margin-right: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 5px 8px 15px $color-sixth;
     &:hover > .details-articles {
       animation-name: reduction-articles;
@@ -447,7 +444,7 @@ header {
       p {
         margin-top: 0;
         margin-bottom: 3%;
-        font-size: 1em;
+        font-size: 0.9em;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -464,7 +461,7 @@ header {
       position: relative;
       padding-top: 10%;
       padding-right: 5%;
-      font-size: 1.3rem;
+      font-size: 0.975rem;
       transition: transform 300ms 100ms ease-in-out;
     }
     &:hover > .encoche {
@@ -487,18 +484,19 @@ header {
     margin: auto;
     margin-left: 0;
     height: 100%;
+    width: 20%;
     visibility: hidden;
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 20px 20px 0;
     background-color: $color-tertiary;
     span {
       background-color: white;
       visibility: hidden;
       font-size: 1.2rem;
       font-weight: bold;
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
-      line-height: 25px;
+      line-height: 20px;
       text-align: center;
       color: $color-tertiary;
     }
@@ -581,7 +579,7 @@ header {
   }
 
   100% {
-    width: 75px;
+    width: 37.5px;
     visibility: visible;
   }
 }
@@ -629,23 +627,22 @@ header {
   input {
     width: 40%;
     margin-left: 30%;
-    height: 3rem;
+    height: 2.25rem;
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.77rem;
     font-weight: bold;
     border: transparent;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    box-shadow: 5px 5px 20px $color-fifth;
+    border-top-right-radius: 1.12rem;
+    border-bottom-right-radius: 1.12rem;
+    border-top-left-radius: 1.12rem;
+    border-bottom-left-radius: 1.12rem;
     background: linear-gradient(-10deg, $color-primary, $color-secondary);
     opacity: 1;
-    box-shadow: 5px 5px 20px $color-fifth;
+    box-shadow: 2px 2px 10px $color-fifth;
     transition: box-shadow 200ms, opacity 200ms;
     &:hover {
       opacity: 0.8;
-      box-shadow: 10px 10px 20px $color-fifth;
+      box-shadow: 5px 5px 10px $color-fifth;
     }
   }
 }
@@ -653,10 +650,10 @@ header {
 footer {
   color: white;
   background-color: $color-fifth;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   padding-left: 6%;
   padding-bottom: 2%;
-  line-height: 2rem;
+  line-height: 1.5rem;
   .logo-footer {
     padding-bottom: 4%;
     padding-top: 5%;
@@ -670,7 +667,7 @@ footer {
     .fa-handshake {
       transform: rotate(-45deg);
       margin-right: 3%;
-      font-size: 1.3rem;
+      font-size: 0.97rem;
     }
   }
   .contact {

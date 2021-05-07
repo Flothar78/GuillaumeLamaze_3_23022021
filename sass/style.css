@@ -21,7 +21,7 @@ a {
 
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,8 +107,8 @@ header {
 
 .localisation {
   background-color: #eaeaea;
-  height: 3.6rem;
-  border-top: solid 6px #cfcfcf;
+  height: 2.7rem;
+  border-top: solid 9px #cfcfcf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,20 +122,20 @@ header {
 
 .localisation .fa-map-marker-alt {
   margin-left: 20%;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .localisation form {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .localisation form input {
   height: 100%;
   background-color: #eaeaea;
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   padding-top: 3.5%;
 }
@@ -156,33 +156,34 @@ header {
 
 .reservez .reservez-un {
   padding-top: 5%;
-  font-size: 0.9rem;
+  font-size: 0.675rem;
+  font-weight: bold;
   white-space: nowrap;
 }
 
 .reservez .reservez-deux {
-  font-size: 1.1rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
 .reservez .explorer {
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   white-space: nowrap;
   color: white;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
   background: linear-gradient(-45deg, #9356dc, #ff79da);
   opacity: 1;
-  -webkit-box-shadow: 5px 5px 20px #353535;
-          box-shadow: 5px 5px 20px #353535;
+  -webkit-box-shadow: 2px 2px 10px #353535;
+          box-shadow: 2px 2px 10px #353535;
   -webkit-transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: box-shadow 200ms, opacity 200ms;
@@ -192,8 +193,8 @@ header {
 .reservez .explorer:hover {
   background: linear-gradient(-45deg, #9356dc, #ff79da);
   opacity: 0.8;
-  -webkit-box-shadow: 10px 10px 20px #353535;
-          box-shadow: 10px 10px 20px #353535;
+  -webkit-box-shadow: 7px 7px 14px #353535;
+          box-shadow: 7px 7px 14px #353535;
 }
 
 .fonctionnement {
@@ -203,7 +204,7 @@ header {
 .fonctionnement h1 {
   margin-left: 4.5%;
   margin-top: 8%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .fonctionnement li {
@@ -214,16 +215,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  height: 75px;
+  height: 55px;
   width: 90%;
   margin-top: 8%;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.12rem;
+  border-bottom-right-radius: 1.12rem;
+  border-top-left-radius: 1.12rem;
+  border-bottom-left-radius: 1.12rem;
   opacity: 1;
-  -webkit-box-shadow: 10px 10px 15px #eaeaea;
-          box-shadow: 10px 10px 15px #eaeaea;
+  -webkit-box-shadow: 4px 4px 10px #eaeaea;
+          box-shadow: 4px 4px 10px #eaeaea;
   -webkit-transition: opacity 300ms, -webkit-box-shadow 300ms;
   transition: opacity 300ms, -webkit-box-shadow 300ms;
   transition: opacity 300ms, box-shadow 300ms;
@@ -232,8 +233,8 @@ header {
 
 .fonctionnement li:hover {
   opacity: 0.6;
-  -webkit-box-shadow: 12px 12px 15px #d6cbcb;
-          box-shadow: 12px 12px 15px #d6cbcb;
+  -webkit-box-shadow: 10px 10px 15px #d6cbcb;
+          box-shadow: 10px 10px 15px #d6cbcb;
 }
 
 .fonctionnement li .fa-mobile-alt {
@@ -251,8 +252,8 @@ header {
 
 .fonctionnement li span {
   background-color: #9356dc;
-  font-size: 0.8rem;
-  padding-top: 4px;
+  font-size: 0.6rem;
+  padding-top: 3px;
   margin-right: 8%;
   margin-left: -3%;
   color: white;
@@ -281,7 +282,7 @@ header {
 }
 
 .retour-logo .retour-accueil {
-  font-size: 1.5rem;
+  font-size: 1.12rem;
   padding-left: 3%;
   padding-top: 1%;
 }
@@ -295,7 +296,7 @@ header {
 
 .restaurants h1 {
   margin-left: 4.5%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -315,7 +316,7 @@ header {
   right: 5%;
   height: 10%;
   background-color: #99e2d0;
-  font-size: 0.6em;
+  font-size: 0.75em;
   line-height: 0.3;
   color: #208f73;
   font-weight: bold;
@@ -327,13 +328,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 20px 20px;
   -webkit-box-shadow: 10px 10px 15px #eaeaea;
           box-shadow: 10px 10px 15px #eaeaea;
 }
 
 .restaurants figure figcaption .ico-cartes {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   padding-top: 5%;
   position: absolute;
   right: 0;
@@ -373,14 +374,14 @@ header {
 
 .restaurants figure figcaption .text {
   width: 80%;
-  font-size: 0.9rem;
-  line-height: 0.8rem;
+  font-size: 1rem;
+  line-height: 0.6rem;
   padding-left: 5%;
 }
 
 .restaurants figure figcaption .ico {
   width: 20%;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .restaurants figure figcaption .ico .fa-heart {
@@ -394,7 +395,7 @@ header {
 
 .restaurants > div .la-palette img {
   width: 100%;
-  height: 140px;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -404,7 +405,7 @@ header {
 
 .restaurants > div .la-note img {
   width: 100%;
-  height: 140px;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -414,7 +415,7 @@ header {
 
 .restaurants > div .a-la-francaise img {
   width: 100%;
-  height: 140px;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -424,7 +425,7 @@ header {
 
 .restaurants > div .le-delice img {
   width: 100%;
-  height: 140px;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8% 8% 0 0;
@@ -441,7 +442,7 @@ header {
 
 .titre-cartes img {
   width: 100%;
-  height: 300px;
+  height: 225px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -449,25 +450,24 @@ header {
 .titre-cartes > div {
   background-color: #f6f6f6;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -32px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 6%;
-  padding-bottom: 3%;
+  padding-top: 4%;
   border-radius: 10%/50%;
 }
 
 .titre-cartes > div .text-cartes {
   width: 80%;
   font-size: 0.9rem;
-  line-height: 3rem;
-  padding-left: 4%;
+  line-height: 2rem;
+  padding-left: 8%;
 }
 
 .titre-cartes > div .ico-cartes {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding-top: 5%;
   z-index: 10;
   background-color: #f6f6f6;
@@ -534,13 +534,13 @@ header {
   margin-top: 0;
   padding-top: 4%;
   padding-bottom: 3%;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin-bottom: 0;
 }
 
 .souligne-vert {
   padding-bottom: 1.5%;
-  border-bottom: #99e2d0 6px solid;
+  border-bottom: #99e2d0 4px solid;
 }
 
 .item-encoche {
@@ -571,7 +571,7 @@ header {
   margin-right: 3%;
   padding-left: 3%;
   padding-right: 3%;
-  border-radius: 25px;
+  border-radius: 20px;
   -webkit-box-shadow: 5px 8px 15px #eaeaea;
           box-shadow: 5px 8px 15px #eaeaea;
 }
@@ -604,7 +604,7 @@ header {
 .item-encoche .itemmenu .details-articles p {
   margin-top: 0;
   margin-bottom: 3%;
-  font-size: 1em;
+  font-size: 0.9em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -623,7 +623,7 @@ header {
   position: relative;
   padding-top: 10%;
   padding-right: 5%;
-  font-size: 1.3rem;
+  font-size: 0.975rem;
   -webkit-transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: transform 300ms 100ms ease-in-out;
@@ -663,8 +663,9 @@ header {
   margin: auto;
   margin-left: 0;
   height: 100%;
+  width: 20%;
   visibility: hidden;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 20px 20px 0;
   background-color: #99e2d0;
 }
 
@@ -673,10 +674,10 @@ header {
   visibility: hidden;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  line-height: 25px;
+  line-height: 20px;
   text-align: center;
   color: #99e2d0;
 }
@@ -803,7 +804,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 75px;
+    width: 37.5px;
     visibility: visible;
   }
 }
@@ -817,7 +818,7 @@ header {
     width: 1px;
   }
   100% {
-    width: 75px;
+    width: 37.5px;
     visibility: visible;
   }
 }
@@ -897,20 +898,19 @@ header {
 .commander input {
   width: 40%;
   margin-left: 30%;
-  height: 3rem;
+  height: 2.25rem;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.77rem;
   font-weight: bold;
   border: transparent;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-  -webkit-box-shadow: 5px 5px 20px #353535;
-          box-shadow: 5px 5px 20px #353535;
+  border-top-right-radius: 1.12rem;
+  border-bottom-right-radius: 1.12rem;
+  border-top-left-radius: 1.12rem;
+  border-bottom-left-radius: 1.12rem;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
   opacity: 1;
-  box-shadow: 5px 5px 20px #353535;
+  -webkit-box-shadow: 2px 2px 10px #353535;
+          box-shadow: 2px 2px 10px #353535;
   -webkit-transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: opacity 200ms, -webkit-box-shadow 200ms;
   transition: box-shadow 200ms, opacity 200ms;
@@ -919,17 +919,17 @@ header {
 
 .commander input:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 10px 10px 20px #353535;
-          box-shadow: 10px 10px 20px #353535;
+  -webkit-box-shadow: 5px 5px 10px #353535;
+          box-shadow: 5px 5px 10px #353535;
 }
 
 footer {
   color: white;
   background-color: #353535;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   padding-left: 6%;
   padding-bottom: 2%;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 footer .logo-footer {
@@ -945,7 +945,7 @@ footer .devenir .fa-handshake {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-right: 3%;
-  font-size: 1.3rem;
+  font-size: 0.97rem;
 }
 
 footer .contact {
