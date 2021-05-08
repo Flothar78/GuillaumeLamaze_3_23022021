@@ -21,8 +21,6 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 .text-cartes h1,
-h3,
-h4,
 h5,
 h6,
 .logo-footer {
@@ -35,7 +33,7 @@ a {
 }
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 3rem;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,13 +382,11 @@ header {
     opacity: 0;
   }
 }
-
 .main-cartes {
   background-color: $color-fourth;
   margin-top: -10%;
   padding-top: 20%;
 }
-
 .entrees > h2,
 .plats > h2,
 .desserts > h2 {
@@ -401,7 +397,6 @@ header {
   font-size: 0.9rem;
   margin-bottom: 0;
 }
-
 .souligne-vert {
   padding-bottom: 1.5%;
   border-bottom: $color-green 4px solid;
@@ -430,15 +425,14 @@ header {
       animation-duration: 300ms;
       animation-fill-mode: forwards;
     }
-
     .details-articles {
       position: relative;
       padding-top: 3%;
       width: 70%;
-      h2 {
+      h4 {
         margin: 0;
         margin-bottom: 3%;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: bolder;
         overflow: hidden;
         white-space: nowrap;
@@ -487,7 +481,7 @@ header {
     margin: auto;
     margin-left: 0;
     height: 100%;
-    width: 20%;
+    max-width: 20%;
     visibility: hidden;
     border-radius: 0 20px 20px 0;
     background-color: $color-tertiary;
@@ -685,7 +679,7 @@ footer {
 @media screen and (min-width: 768px) {
   .loader {
     font-family: "Shrikhand", cursive;
-    font-size: 6rem;
+    font-size: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -947,93 +941,92 @@ footer {
       }
       .itemmenu {
         width: 90%;
-        &:hover > .details-prix {
-          transform: translate(-80px, 0);
-        }
-        .details-prix {
-          position: relative;
-          padding-top: 10%;
-          padding-right: 5%;
-          font-size: 0.975rem;
-          transition: transform 300ms 100ms ease-in-out;
-        }
-
-        .details-articles {
-          width: 85%;
-          h2 {
-            font-size: 1.3em;
-          }
-          p {
-            font-size: 1.3em;
-          }
-        }
-        .details-prix {
+      }
+      &:hover > .details-prix {
+        transform: translate(-80px, 0);
+      }
+      .details-prix {
+        position: relative;
+        padding-top: 10%;
+        padding-right: 5%;
+        font-size: 0.975rem;
+        transition: transform 300ms 100ms ease-in-out;
+      }
+      .details-articles {
+        width: 85%;
+        h4 {
           font-size: 1.3em;
         }
-        .encoche {
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          right: 0;
-          margin: auto;
-          margin-left: 0;
-          height: 100%;
-          width: 20%;
+        p {
+          font-size: 1.3em;
+        }
+      }
+      .details-prix {
+        font-size: 1.3em;
+      }
+      .encoche {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        margin: auto;
+        margin-left: 0;
+        height: 100%;
+        max-width: 20%;
+        visibility: hidden;
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        span {
+          background-color: white;
           visibility: hidden;
-          border-radius: 0 20px 20px 0;
-          background-color: $color-tertiary;
-          span {
-            background-color: white;
-            visibility: hidden;
-            font-size: 1.2rem;
-            font-weight: bold;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            line-height: 25px;
-            text-align: center;
-            color: $color-tertiary;
-          }
+          font-size: 1.2rem;
+          font-weight: bold;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          line-height: 25px;
+          text-align: center;
+          color: $color-tertiary;
         }
       }
     }
   }
-  @keyframes box-grow {
-    0% {
-      width: 0px;
-      visibility: visible;
-    }
+}
+@keyframes box-grow {
+  0% {
+    width: 0px;
+    visibility: visible;
+  }
 
-    1% {
-      width: 1px;
-    }
+  1% {
+    width: 1px;
+  }
 
-    100% {
-      width: 80px;
-      visibility: visible;
+  100% {
+    width: 70px;
+    visibility: visible;
+  }
+}
+footer {
+  width: 100%;
+  margin: auto;
+  padding-left: 5%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 0;
+  .logo-footer {
+    padding-bottom: 2%;
+  }
+  .proposer {
+    .fa-utensils {
+      margin-right: 4.5%;
+      padding-right: 0;
     }
   }
-  footer {
-    width: 100%;
-    margin: auto;
-    padding-left: 5%;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding-bottom: 0;
-    .logo-footer {
-      padding-bottom: 2%;
-    }
-    .proposer {
-      .fa-utensils {
-        margin-right: 4.5%;
-        padding-right: 0;
-      }
-    }
-    .devenir {
-      .fa-handshake {
-        margin-right: 4.5%;
-      }
+  .devenir {
+    .fa-handshake {
+      margin-right: 4.5%;
     }
   }
 }
@@ -1102,6 +1095,11 @@ footer {
       margin-left: 4%;
       margin-bottom: 0;
     }
+    figure {
+      .nouveau-vert {
+        line-height: 0;
+      }
+    }
     > div {
       display: flex;
       .la-palette img {
@@ -1134,7 +1132,6 @@ footer {
       }
     }
   }
-
   .retour-logo .logo {
     margin-left: 35%;
   }
@@ -1145,14 +1142,33 @@ footer {
   .main-cartes {
     .item-encoche {
       .itemmenu {
-        width: 90%;
+        &:hover > .encoche {
+          animation-name: box-grow;
+          animation-duration: 300ms;
+          animation-fill-mode: forwards;
+        }
+        .encoche {
+          width: 90%;
+        }
         &:hover > .details-prix {
           transform: translate(-130px, 0);
         }
-        .encoche {
-          max-width: 20%;
-        }
       }
+    }
+  }
+  @keyframes box-grow {
+    0% {
+      width: 0px;
+      visibility: visible;
+    }
+
+    1% {
+      width: 1px;
+    }
+
+    100% {
+      width: 90px;
+      visibility: visible;
     }
   }
   footer {
