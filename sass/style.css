@@ -23,7 +23,7 @@ a {
 
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1348,6 +1348,70 @@ footer .devenir .fa-handshake {
 }
 
 @media screen and (min-width: 1024px) {
+  .loader {
+    font-family: "Shrikhand", cursive;
+    font-size: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #9356dc;
+    background-color: #99e2d0;
+    visibility: hidden;
+    -webkit-animation-name: entree-site;
+            animation-name: entree-site;
+    -webkit-animation-duration: 3000ms;
+            animation-duration: 3000ms;
+    -webkit-animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+            animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+  }
+  .loader .text-loader {
+    text-shadow: 1rem 1rem 0.4rem #c5b2dd;
+  }
+  @-webkit-keyframes entree-site {
+    0% {
+      color: #99e2d0;
+      visibility: visible;
+    }
+    50% {
+      color: #ff79da;
+    }
+    99% {
+      color: #9356dc;
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes entree-site {
+    0% {
+      color: #99e2d0;
+      visibility: visible;
+    }
+    50% {
+      color: #ff79da;
+    }
+    99% {
+      color: #9356dc;
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .logo-index {
     padding-top: 1%;
     padding-bottom: 1%;

@@ -33,7 +33,7 @@ a {
 }
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1036,6 +1036,45 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 1024px) {
+  .loader {
+    font-family: "Shrikhand", cursive;
+    font-size: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: $color-primary;
+    background-color: $color-tertiary;
+    visibility: hidden;
+    animation-name: entree-site;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(1, 0.42, 0.26, 0.92);
+    .text-loader {
+      text-shadow: 1rem 1rem 0.4rem #c5b2dd;
+    }
+  }
+  @keyframes entree-site {
+    0% {
+      color: $color-tertiary;
+      visibility: visible;
+    }
+    50% {
+      color: $color-secondary;
+    }
+    99% {
+      color: $color-primary;
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .logo-index {
     padding-top: 1%;
     padding-bottom: 1%;
