@@ -23,7 +23,7 @@ a {
 
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,8 +697,7 @@ header {
     visibility: visible;
   }
   100% {
-    -webkit-transform: 0, 0;
-            transform: 0, 0;
+    -webkit-animation: 0, 0px;
     opacity: 1;
   }
 }
@@ -716,8 +715,7 @@ header {
     visibility: visible;
   }
   100% {
-    -webkit-transform: 0, 0;
-            transform: 0, 0;
+    -webkit-animation: 0, 0px;
     opacity: 1;
   }
 }

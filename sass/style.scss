@@ -33,7 +33,7 @@ a {
 }
 .loader {
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -512,7 +512,7 @@ header {
   }
 
   100% {
-    transform: (0, 0);
+    -webkit-animation: (0, 0px);
     opacity: 1;
   }
 }
