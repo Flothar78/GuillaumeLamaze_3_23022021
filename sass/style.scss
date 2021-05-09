@@ -458,8 +458,8 @@ header {
     .details-prix {
       position: relative;
       padding-top: 10%;
-      padding-right: 5%;
-      font-size: 0.975rem;
+      padding-right: 3%;
+      font-size: 0.9rem;
       transition: transform 300ms 100ms ease-in-out;
     }
     &:hover > .encoche {
@@ -1020,7 +1020,7 @@ footer {
   }
   .proposer {
     .fa-utensils {
-      margin-right: 5%;
+      margin-right: 6%;
       padding-right: 0;
     }
   }

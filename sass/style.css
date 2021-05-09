@@ -625,8 +625,8 @@ header {
 .item-encoche .itemmenu .details-prix {
   position: relative;
   padding-top: 10%;
-  padding-right: 5%;
-  font-size: 0.975rem;
+  padding-right: 3%;
+  font-size: 0.9rem;
   -webkit-transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: -webkit-transform 300ms 100ms ease-in-out;
   transition: transform 300ms 100ms ease-in-out;
@@ -1337,7 +1337,7 @@ footer .logo-footer {
 }
 
 footer .proposer .fa-utensils {
-  margin-right: 5%;
+  margin-right: 6%;
   padding-right: 0;
 }
 
