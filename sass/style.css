@@ -465,7 +465,7 @@ header {
 
 .titre-cartes > div .text-cartes {
   width: 80%;
-  font-size: 0.83rem;
+  font-size: 0.75rem;
   line-height: 2rem;
   padding-left: 8%;
 }
@@ -591,7 +591,7 @@ header {
 .item-encoche .itemmenu .details-articles {
   position: relative;
   padding-top: 3%;
-  width: 85%;
+  width: 90%;
 }
 
 .item-encoche .itemmenu .details-articles h4 {
@@ -675,7 +675,7 @@ header {
 .item-encoche .encoche span {
   background-color: white;
   visibility: hidden;
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -926,7 +926,7 @@ header {
 footer {
   color: white;
   background-color: #353535;
-  font-size: 0.5rem;
+  font-size: 1rem;
   padding-left: 6%;
   padding-bottom: 4%;
   line-height: 1rem;
@@ -1266,13 +1266,14 @@ footer .contact {
     width: 85%;
   }
   .main-cartes .item-encoche .details-articles h4 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .main-cartes .item-encoche .details-articles p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .main-cartes .item-encoche .details-prix {
-    font-size: 1.3em;
+    font-size: 1em;
+    padding-right: 0;
   }
   .main-cartes .item-encoche .encoche {
     position: absolute;
@@ -1326,7 +1327,7 @@ footer {
   width: 100%;
   margin: auto;
   padding-left: 5%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   padding-bottom: 0;
 }
@@ -1336,7 +1337,7 @@ footer .logo-footer {
 }
 
 footer .proposer .fa-utensils {
-  margin-right: 4.5%;
+  margin-right: 5%;
   padding-right: 0;
 }
 
