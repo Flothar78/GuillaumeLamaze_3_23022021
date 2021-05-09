@@ -110,7 +110,7 @@ header {
 .localisation {
   background-color: #eaeaea;
   height: 2.7rem;
-  border-top: solid 9px #cfcfcf;
+  border-top: solid 3px #cfcfcf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,8 +123,8 @@ header {
 }
 
 .localisation .fa-map-marker-alt {
-  margin-left: 20%;
-  font-size: 0.75rem;
+  margin-left: 15%;
+  font-size: 1rem;
 }
 
 .localisation form {
@@ -137,7 +137,8 @@ header {
   height: 100%;
   background-color: #eaeaea;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding-bottom: 3%;
   font-weight: bold;
   padding-top: 3.5%;
 }
@@ -590,7 +591,7 @@ header {
 .item-encoche .itemmenu .details-articles {
   position: relative;
   padding-top: 3%;
-  width: 70%;
+  width: 85%;
 }
 
 .item-encoche .itemmenu .details-articles h4 {
@@ -675,7 +676,6 @@ header {
   background-color: white;
   visibility: hidden;
   font-size: 1.2rem;
-  font-weight: bold;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -926,15 +926,14 @@ header {
 footer {
   color: white;
   background-color: #353535;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   padding-left: 6%;
-  padding-bottom: 2%;
-  line-height: 1.5rem;
+  padding-bottom: 4%;
+  line-height: 1rem;
 }
 
 footer .logo-footer {
-  padding-bottom: 4%;
-  padding-top: 5%;
+  padding-top: 4%;
 }
 
 footer .proposer .fa-utensils {
