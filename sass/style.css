@@ -1263,7 +1263,7 @@ footer .contact {
     transition: transform 300ms 100ms ease-in-out, -webkit-transform 300ms 100ms ease-in-out;
   }
   .main-cartes .item-encoche .details-articles {
-    width: 85%;
+    width: 95%;
   }
   .main-cartes .item-encoche .details-articles h4 {
     font-size: 1em;
