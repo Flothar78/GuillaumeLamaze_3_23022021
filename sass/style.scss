@@ -26,7 +26,6 @@ h6,
 .logo-footer {
   font-family: "Shrikhand", cursive;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -336,7 +335,6 @@ header {
     position: absolute;
     display: flex;
     padding-top: 4%;
-
     border-radius: 10%/50%;
     .text-cartes {
       width: 80%;
@@ -374,7 +372,6 @@ header {
     }
   }
 }
-
 @keyframes coeur-opacity {
   0% {
     opacity: 1;
@@ -499,7 +496,6 @@ header {
     }
   }
 }
-
 @keyframes glissement-articles {
   0% {
     transform: translate(0, 100px);
@@ -510,13 +506,11 @@ header {
     opacity: 0;
     visibility: visible;
   }
-
   100% {
     -webkit-animation: (0, 0px);
     opacity: 1;
   }
 }
-
 .entrees .item-encoche:nth-child(1) {
   animation-delay: 700ms;
 }
@@ -532,7 +526,6 @@ header {
 .entrees .item-encoche:nth-child(5) {
   animation-delay: 1500ms;
 }
-
 .plats .item-encoche:nth-child(1) {
   animation-delay: 700ms;
 }
@@ -548,7 +541,6 @@ header {
 .plats .item-encoche:nth-child(5) {
   animation-delay: 1500ms;
 }
-
 .desserts .item-encoche:nth-child(1) {
   animation-delay: 700ms;
 }
@@ -564,23 +556,19 @@ header {
 .desserts .item-encoche:nth-child(4) {
   animation-delay: 1500ms;
 }
-
 @keyframes box-grow {
   0% {
     width: 0px;
     visibility: visible;
   }
-
   1% {
     width: 1px;
   }
-
   100% {
     width: 37.5px;
     visibility: visible;
   }
 }
-
 @keyframes rotation-encoche {
   0% {
     transform: rotate(90deg);
@@ -591,7 +579,6 @@ header {
     visibility: visible;
   }
 }
-
 @keyframes reduction-articles {
   0% {
     width: 70%;
@@ -606,18 +593,15 @@ header {
     width: 45%;
   }
 }
-
 .reservez,
 .choix-restaurant,
 .compose-menu,
 .deguste-restau {
   background-color: $color-fourth;
 }
-
 .reservez p {
   margin-top: 0;
 }
-
 .commander {
   padding-top: 6%;
   padding-bottom: 14%;
@@ -643,7 +627,6 @@ header {
     }
   }
 }
-
 footer {
   color: white;
   background-color: $color-fifth;
@@ -670,11 +653,9 @@ footer {
     padding-bottom: 8%;
   }
 }
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-
 @media screen and (min-width: 768px) {
   .loader {
     font-family: "Shrikhand", cursive;
@@ -859,7 +840,6 @@ footer {
         padding-left: 3%;
       }
     }
-
     .le-delice {
       width: 50%;
       img {
@@ -998,11 +978,9 @@ footer {
     width: 0px;
     visibility: visible;
   }
-
   1% {
     width: 1px;
   }
-
   100% {
     width: 70px;
     visibility: visible;
@@ -1030,11 +1008,9 @@ footer {
     }
   }
 }
-
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
-
 @media screen and (min-width: 1024px) {
   .loader {
     font-family: "Shrikhand", cursive;
@@ -1200,11 +1176,9 @@ footer {
       width: 0px;
       visibility: visible;
     }
-
     1% {
       width: 1px;
     }
-
     100% {
       width: 90px;
       visibility: visible;
