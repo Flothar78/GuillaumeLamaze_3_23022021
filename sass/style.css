@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .loader {
   font-family: "Shrikhand", cursive;
   font-size: 3.5rem;
@@ -1319,10 +1323,8 @@ footer .contact {
 }
 
 footer {
-  width: auto;
-  margin: auto;
   padding-left: 5%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 2rem;
   padding-bottom: 0;
 }
@@ -1332,7 +1334,7 @@ footer .logo-footer {
 }
 
 footer .proposer .fa-utensils {
-  margin-right: 6%;
+  margin-right: 5%;
   padding-right: 0;
 }
 

@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  margin: 0;
+}
 .loader {
   font-family: "Shrikhand", cursive;
   font-size: 3.5rem;
@@ -444,7 +447,6 @@ header {
     p {
       margin-top: 1%;
     }
-
     &:hover > .details-prix {
       transform: translate(-100px, 0);
     }
@@ -983,10 +985,8 @@ footer {
   }
 }
 footer {
-  width: auto;
-  margin: auto;
   padding-left: 5%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 2rem;
   padding-bottom: 0;
   .logo-footer {
@@ -994,7 +994,7 @@ footer {
   }
   .proposer {
     .fa-utensils {
-      margin-right: 6%;
+      margin-right: 5%;
       padding-right: 0;
     }
   }
