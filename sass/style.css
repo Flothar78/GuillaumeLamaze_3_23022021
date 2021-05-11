@@ -689,12 +689,6 @@ header {
             transform: translate(0, 100px);
     opacity: 0;
   }
-  1% {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-    opacity: 0;
-    visibility: visible;
-  }
   100% {
     -webkit-animation: 0, 0px;
     opacity: 1;
@@ -706,12 +700,6 @@ header {
     -webkit-transform: translate(0, 100px);
             transform: translate(0, 100px);
     opacity: 0;
-  }
-  1% {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-    opacity: 0;
-    visibility: visible;
   }
   100% {
     -webkit-animation: 0, 0px;
